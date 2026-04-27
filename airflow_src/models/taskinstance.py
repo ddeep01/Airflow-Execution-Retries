@@ -1106,73 +1106,39 @@ class TaskInstance(Base, LoggingMixin, BaseWorkload):
             prefix += f"map_index={self.map_index} "
         return prefix + f"[{self.state}] ti_id={self.id}>"
 
-    # def next_retry_datetime(self):
-    #     """
-    #     Get datetime of the next retry if the task instance fails.
-
-    #     For exponential backoff, retry_delay is used as base and will be converted to seconds.
-    #     """
-    #     from airflow.sdk.definitions._internal.abstractoperator import MAX_RETRY_DELAY
-
-    #     delay = self.task.retry_delay
-    #     multiplier = self.task.retry_exponential_backoff if self.task.retry_exponential_backoff != 0 else 1.0
-    #     if multiplier != 1.0 and multiplier > 0:
-    #         try:
-    #             # If the min_backoff calculation is below 1, it will be converted to 0 via int. Thus,
-    #             # we must round up prior to converting to an int, otherwise a divide by zero error
-    #             # will occur in the modded_hash calculation.
-    #             # this probably gives unexpected results if a task instance has previously been cleared,
-    #             # because try_number can increase without bound
-    #             min_backoff = math.ceil(delay.total_seconds() * (multiplier ** (self.try_number - 1)))
-    #         except OverflowError:
-    #             min_backoff = MAX_RETRY_DELAY
-    #             self.log.warning(
-    #                 "OverflowError occurred while calculating min_backoff, using MAX_RETRY_DELAY for min_backoff."
-    #             )
-
-    #         # In the case when delay.total_seconds() is 0, min_backoff will not be rounded up to 1.
-    #         # To address this, we impose a lower bound of 1 on min_backoff. This effectively makes
-    #         # the ceiling function unnecessary, but the ceiling function was retained to avoid
-    #         # introducing a breaking change.
-    #         if min_backoff < 1:
-    #             min_backoff = 1
-
-    #         # deterministic per task instance
-    #         ti_hash = int(
-    #             hashlib.sha1(
-    #                 f"{self.dag_id}#{self.task_id}#{self.logical_date}#{self.try_number}".encode(),
-    #                 usedforsecurity=False,
-    #             ).hexdigest(),
-    #             16,
-    #         )
-    #         # between 1 and 1.0 * delay * (multiplier^retry_number)
-    #         modded_hash = min_backoff + ti_hash % min_backoff
-    #         # timedelta has a maximum representable value. The exponentiation
-    #         # here means this value can be exceeded after a certain number
-    #         # of tries (around 50 if the initial delay is 1s, even fewer if
-    #         # the delay is larger). Cap the value here before creating a
-    #         # timedelta object so the operation doesn't fail with "OverflowError".
-    #         delay_backoff_in_seconds = min(modded_hash, MAX_RETRY_DELAY)
-    #         delay = timedelta(seconds=delay_backoff_in_seconds)
-    #         if self.task.max_retry_delay:
-    #             delay = min(self.task.max_retry_delay, delay)
-    #     return self.end_date + delay
-
     def next_retry_datetime(self):
-        """
-            Custom retry logic: deterministic exponential backoff
-        """
+       """
+       Custom priority-based retry logic
+       """
 
-        delay_seconds = self.task.retry_delay.total_seconds()
+       base_delay = self.task.retry_delay.total_seconds()
 
-        # Exponential backoff
-        delay_seconds = delay_seconds * (2 ** (self.try_number - 1))
+       # Get priority (default = 1)
+       priority = getattr(self.task, "priority_weight", 1)
 
-        delay = timedelta(seconds=delay_seconds)
+       # Define behavior
+       if priority >= 10:
+           multiplier = 0.5   # HIGH → faster retry
+           level = "HIGH"
+       elif priority >= 5:
+           multiplier = 1     # MEDIUM → normal
+           level = "MEDIUM"
+       else:
+           multiplier = 2     # LOW → slower retry
+           level = "LOW"
 
-        base_time = self.end_date or timezone.utcnow()
+       delay_seconds = base_delay * multiplier
 
-        return base_time + delay
+       self.log.info(
+           f"[PRIORITY RETRY ACTIVE] Task={self.task_id} | "
+           f"Priority={priority} ({level}) | Delay={delay_seconds}s"
+       )
+
+       delay = timedelta(seconds=delay_seconds)
+
+       base_time = self.end_date or timezone.utcnow()
+
+       return base_time + delay
 
     def ready_for_retry(self) -> bool:
         """Check on whether the task instance is in the right state and timeframe to be retried."""
@@ -1692,26 +1658,28 @@ class TaskInstance(Base, LoggingMixin, BaseWorkload):
         return False
 
     @classmethod
+    @internal_api_call
+    @provide_session
     def fetch_handle_failure_context(
         cls,
-        ti: TaskInstance,
-        error: None | str,
+        ti: TaskInstance | TaskInstancePydantic,
+        error: None | str | Exception | KeyboardInterrupt,
         test_mode: bool | None = None,
-        *,
-        session: Session,
-        fail_fast: bool = False,
+        context: Context | None = None,
+        force_fail: bool = False,
+        session: Session = NEW_SESSION,
     ):
-        """
-        Fetch the context needed to handle a failure.
+        """Handle Failure for the TaskInstance."""
+        get_listener_manager().hook.on_task_instance_failed(
+            previous_state=TaskInstanceState.RUNNING, task_instance=ti, session=session
+        )
 
-        :param ti: TaskInstance
-        :param error: if specified, log the specific exception if thrown
-        :param test_mode: doesn't record success or failure in the DB if True
-        :param session: SQLAlchemy ORM Session
-        :param fail_fast: if True, fail all downstream tasks
-        """
         if error:
-            cls.logger().error("%s", error)
+            if isinstance(error, BaseException):
+                tb = TaskInstance.get_truncated_error_traceback(error, truncate_to=ti._execute_task)
+                cls.logger().error("Task failed with exception", exc_info=(type(error), error, tb))
+            else:
+                cls.logger().error("%s", error)
         if not test_mode:
             ti.refresh_from_db(session)
 
@@ -1719,51 +1687,90 @@ class TaskInstance(Base, LoggingMixin, BaseWorkload):
         print(f"[DEBUG] Retry attempt: {ti.try_number} for task {ti.task_id}")
         ti.set_duration()
 
-        DualStatsManager.incr(
-            "operator_failures",
-            tags=ti.stats_tags,
-            extra_tags={"operator_name": ti.operator},
-        )
+        Stats.incr(f"operator_failures_{ti.operator}", tags=ti.stats_tags)
+        # Same metric with tagging
+        Stats.incr("operator_failures", tags={**ti.stats_tags, "operator": ti.operator})
         Stats.incr("ti_failures", tags=ti.stats_tags)
 
         if not test_mode:
             session.add(Log(TaskInstanceState.FAILED.value, ti))
 
+            # Log failure duration
+            session.add(TaskFail(ti=ti))
+
         ti.clear_next_method_args()
+
+        # In extreme cases (zombie in case of dag with parse error) we might _not_ have a Task.
+        if context is None and getattr(ti, "task", None):
+            context = ti.get_template_context(session)
+
+        if context is not None:
+            context["exception"] = error
 
         # Set state correctly and figure out how to log it and decide whether
         # to email
+
+        # Note, callback invocation needs to be handled by caller of
+        # _run_raw_task to avoid race conditions which could lead to duplicate
+        # invocations or miss invocation.
 
         # Since this function is called only when the TaskInstance state is running,
         # try_number contains the current try_number (not the next). We
         # only mark task instance as FAILED if the next task instance
         # try_number exceeds the max_tries ... or if force_fail is truthy
 
-        # Actual callbacks are handled by the DAG processor, not the scheduler
-        task = getattr(ti, "task", None)
+        task: BaseOperator | None = None
+        try:
+            if getattr(ti, "task", None) and context:
+                task = ti.task.unmap((context, session))
+        except Exception:
+            cls.logger().error("Unable to unmap task to determine if we need to send an alert email")
 
-        if not ti.is_eligible_to_retry():
+        if force_fail or not ti.is_eligible_to_retry():
             ti.state = TaskInstanceState.FAILED
+            email_for_state = operator.attrgetter("email_on_failure")
+            callbacks = task.on_failure_callback if task else None
 
-            if task and fail_fast:
+            if task and task.dag and task.dag.fail_stop:
                 _stop_remaining_tasks(task_instance=ti, session=session)
         else:
-            if ti.state == TaskInstanceState.RUNNING:
-                # If the task instance is in the running state, it means it raised an exception and
-                # about to retry so we record the task instance history. For other states, the task
-                # instance was cleared and already recorded in the task instance history.
-                ti.prepare_db_for_next_try(session)
+            if ti.state == TaskInstanceState.QUEUED:
+                ti._try_number += 1
 
             ti.state = State.UP_FOR_RETRY
 
-        try:
-            get_listener_manager().hook.on_task_instance_failed(
-                previous_state=TaskInstanceState.RUNNING, task_instance=ti, error=error
-            )
-        except Exception:
-            log.exception("error calling listener")
+            base_delay = ti.task.retry_delay.total_seconds()
+            priority = getattr(ti.task, "priority_weight", 1)
 
-        return ti
+            if priority >= 10:
+                multiplier = 0.5
+                level = "HIGH"
+            elif priority >= 5:
+                multiplier = 1
+                level = "MEDIUM"
+            else:
+                multiplier = 2
+                level = "LOW"
+
+            delay_seconds = base_delay * multiplier
+
+            ti.log.info(
+                f"[PRIORITY RETRY ACTIVE] Task={ti.task_id} | "
+                f"Priority={priority} ({level}) | Delay={delay_seconds}s"
+            )
+
+            ti.task.retry_delay = timedelta(seconds=delay_seconds)
+
+            email_for_state = operator.attrgetter("email_on_retry")
+            callbacks = task.on_retry_callback if task else None
+
+        return {
+            "ti": ti,
+            "email_for_state": email_for_state,
+            "task": task,
+            "callbacks": callbacks,
+            "context": context,
+        }
 
     @staticmethod
     @provide_session

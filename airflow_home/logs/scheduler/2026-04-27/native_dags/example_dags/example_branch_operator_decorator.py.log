@@ -4862,3 +4862,291 @@ Traceback (most recent call last):
 airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
 [2026-04-27T10:21:00.521+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
 [2026-04-27T10:21:00.540+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.143 seconds
+[2026-04-27T14:46:55.220+0000] {processor.py:161} INFO - Started process (PID=8300) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:46:55.228+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2026-04-27T14:46:55.230+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:46:55.229+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:46:55.358+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:46:55.351+0000] {dagbag.py:348} ERROR - Failed to import: /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 366, in __call__
+    op = self.operator_class(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 233, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 584, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2026-04-27T14:46:55.358+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:46:55.421+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.214 seconds
+[2026-04-27T14:48:22.596+0000] {processor.py:161} INFO - Started process (PID=8372) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:48:22.600+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2026-04-27T14:48:22.601+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:22.601+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:48:22.695+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:22.692+0000] {dagbag.py:348} ERROR - Failed to import: /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 366, in __call__
+    op = self.operator_class(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 233, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 584, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2026-04-27T14:48:22.695+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:48:22.722+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.130 seconds
+[2026-04-27T14:49:17.215+0000] {processor.py:161} INFO - Started process (PID=8428) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:49:17.218+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2026-04-27T14:49:17.220+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:17.219+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:49:17.266+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:17.264+0000] {dagbag.py:348} ERROR - Failed to import: /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 366, in __call__
+    op = self.operator_class(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 233, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 584, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2026-04-27T14:49:17.266+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:49:17.284+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.075 seconds
+[2026-04-27T14:50:06.973+0000] {processor.py:161} INFO - Started process (PID=8480) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:50:06.978+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2026-04-27T14:50:06.980+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:06.979+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:50:07.026+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:07.025+0000] {dagbag.py:348} ERROR - Failed to import: /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 366, in __call__
+    op = self.operator_class(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 233, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 584, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2026-04-27T14:50:07.027+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:50:07.045+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.076 seconds
+[2026-04-27T14:50:52.738+0000] {processor.py:161} INFO - Started process (PID=8528) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:50:52.742+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2026-04-27T14:50:52.743+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:52.743+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:50:52.784+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:52.782+0000] {dagbag.py:348} ERROR - Failed to import: /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 366, in __call__
+    op = self.operator_class(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 233, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 584, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2026-04-27T14:50:52.784+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:50:52.803+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.069 seconds
+[2026-04-27T14:51:33.306+0000] {processor.py:161} INFO - Started process (PID=8572) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:51:33.309+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2026-04-27T14:51:33.311+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:33.310+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:51:33.354+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:33.353+0000] {dagbag.py:348} ERROR - Failed to import: /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 366, in __call__
+    op = self.operator_class(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 233, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 584, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2026-04-27T14:51:33.354+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T14:51:33.375+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.075 seconds
+[2026-04-27T15:04:59.443+0000] {processor.py:161} INFO - Started process (PID=8709) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T15:04:59.447+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2026-04-27T15:04:59.448+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:04:59.447+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T15:04:59.529+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:04:59.526+0000] {dagbag.py:348} ERROR - Failed to import: /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 366, in __call__
+    op = self.operator_class(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 233, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 584, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2026-04-27T15:04:59.530+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T15:04:59.548+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.107 seconds
+[2026-04-27T15:05:54.310+0000] {processor.py:161} INFO - Started process (PID=8763) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T15:05:54.311+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2026-04-27T15:05:54.313+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:54.312+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T15:05:54.395+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:54.391+0000] {dagbag.py:348} ERROR - Failed to import: /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 366, in __call__
+    op = self.operator_class(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 233, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 584, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2026-04-27T15:05:54.395+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T15:05:54.451+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.154 seconds
+[2026-04-27T15:06:46.408+0000] {processor.py:161} INFO - Started process (PID=8816) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T15:06:46.411+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2026-04-27T15:06:46.412+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:46.412+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T15:06:46.456+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:46.453+0000] {dagbag.py:348} ERROR - Failed to import: /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 366, in __call__
+    op = self.operator_class(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 233, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 584, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2026-04-27T15:06:46.456+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2026-04-27T15:06:46.477+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.075 seconds

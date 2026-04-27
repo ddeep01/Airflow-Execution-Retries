@@ -856,3 +856,45 @@
 [2026-04-27T10:21:11.369+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:21:11.369+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-04-27T10:21:11.388+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:21:11.388+0000] {dag.py:3823} INFO - Setting next_dagrun for latest_only to 2026-04-27 04:00:00+00:00, run_after=2026-04-27 08:00:00+00:00
 [2026-04-27T10:21:11.409+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.099 seconds
+[2026-04-27T14:48:53.749+0000] {processor.py:161} INFO - Started process (PID=8403) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:48:53.751+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2026-04-27T14:48:53.752+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:53.752+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:48:53.760+0000] {processor.py:840} INFO - DAG(s) 'latest_only' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:48:53.842+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:53.842+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:48:53.857+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:53.857+0000] {dag.py:3823} INFO - Setting next_dagrun for latest_only to 2026-04-27 08:00:00+00:00, run_after=2026-04-27 12:00:00+00:00
+[2026-04-27T14:48:53.879+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.134 seconds
+[2026-04-27T14:50:01.444+0000] {processor.py:161} INFO - Started process (PID=8473) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:50:01.449+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2026-04-27T14:50:01.451+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:01.450+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:50:01.460+0000] {processor.py:840} INFO - DAG(s) 'latest_only' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:50:01.476+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:01.476+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:50:01.497+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:01.497+0000] {dag.py:3823} INFO - Setting next_dagrun for latest_only to 2026-04-27 08:00:00+00:00, run_after=2026-04-27 12:00:00+00:00
+[2026-04-27T14:50:01.518+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.079 seconds
+[2026-04-27T14:50:59.911+0000] {processor.py:161} INFO - Started process (PID=8536) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:50:59.914+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2026-04-27T14:50:59.915+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:59.914+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:50:59.920+0000] {processor.py:840} INFO - DAG(s) 'latest_only' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:50:59.937+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:59.935+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:50:59.957+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:59.957+0000] {dag.py:3823} INFO - Setting next_dagrun for latest_only to 2026-04-27 08:00:00+00:00, run_after=2026-04-27 12:00:00+00:00
+[2026-04-27T14:50:59.978+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.072 seconds
+[2026-04-27T14:51:58.189+0000] {processor.py:161} INFO - Started process (PID=8599) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:51:58.193+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2026-04-27T14:51:58.195+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:58.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:51:58.202+0000] {processor.py:840} INFO - DAG(s) 'latest_only' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T14:51:58.221+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:58.221+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:51:58.241+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:58.240+0000] {dag.py:3823} INFO - Setting next_dagrun for latest_only to 2026-04-27 08:00:00+00:00, run_after=2026-04-27 12:00:00+00:00
+[2026-04-27T14:51:58.262+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.080 seconds
+[2026-04-27T15:05:29.899+0000] {processor.py:161} INFO - Started process (PID=8739) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T15:05:29.901+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2026-04-27T15:05:29.903+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:29.902+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T15:05:29.910+0000] {processor.py:840} INFO - DAG(s) 'latest_only' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T15:05:29.928+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:29.928+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T15:05:29.948+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:29.947+0000] {dag.py:3823} INFO - Setting next_dagrun for latest_only to 2026-04-27 08:00:00+00:00, run_after=2026-04-27 12:00:00+00:00
+[2026-04-27T15:05:29.974+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.079 seconds
+[2026-04-27T15:06:40.139+0000] {processor.py:161} INFO - Started process (PID=8810) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T15:06:40.142+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2026-04-27T15:06:40.143+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:40.142+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T15:06:40.148+0000] {processor.py:840} INFO - DAG(s) 'latest_only' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2026-04-27T15:06:40.161+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:40.161+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T15:06:40.178+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:40.178+0000] {dag.py:3823} INFO - Setting next_dagrun for latest_only to 2026-04-27 08:00:00+00:00, run_after=2026-04-27 12:00:00+00:00
+[2026-04-27T15:06:40.198+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.062 seconds

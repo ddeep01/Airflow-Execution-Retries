@@ -1,0 +1,29 @@
+[2026-04-27T16:09:03.284+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_priority_retry.medium_priority manual__2026-04-27T16:08:23.909599+00:00 [queued]>
+[2026-04-27T16:09:03.287+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_priority_retry.medium_priority manual__2026-04-27T16:08:23.909599+00:00 [queued]>
+[2026-04-27T16:09:03.287+0000] {taskinstance.py:2163} INFO - Starting attempt 4 of 4
+[2026-04-27T16:09:03.297+0000] {taskinstance.py:2184} INFO - Executing <Task(PythonOperator): medium_priority> on 2026-04-27 16:08:23.909599+00:00
+[2026-04-27T16:09:03.300+0000] {standard_task_runner.py:60} INFO - Started process 111831 to run task
+[2026-04-27T16:09:03.305+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'exp_priority_retry', 'medium_priority', 'manual__2026-04-27T16:08:23.909599+00:00', '--job-id', '122', '--raw', '--subdir', 'DAGS_FOLDER/exp_priority_retry.py', '--cfg-path', '/tmp/tmp7bxhtli2']
+[2026-04-27T16:09:03.306+0000] {standard_task_runner.py:88} INFO - Job 122: Subtask medium_priority
+[2026-04-27T16:09:03.338+0000] {task_command.py:423} INFO - Running <TaskInstance: exp_priority_retry.medium_priority manual__2026-04-27T16:08:23.909599+00:00 [running]> on host Deep.localdomain
+[2026-04-27T16:09:03.374+0000] {taskinstance.py:2473} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='deep' AIRFLOW_CTX_DAG_ID='exp_priority_retry' AIRFLOW_CTX_TASK_ID='medium_priority' AIRFLOW_CTX_EXECUTION_DATE='2026-04-27T16:08:23.909599+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-27T16:08:23.909599+00:00'
+[2026-04-27T16:09:03.374+0000] {logging_mixin.py:188} INFO - Running MEDIUM
+[2026-04-27T16:09:03.374+0000] {logging_mixin.py:188} INFO - [DEBUG] Retry attempt: 4 for task medium_priority
+[2026-04-27T16:09:03.374+0000] {taskinstance.py:2691} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py", line 33, in <lambda>
+    python_callable=lambda: fail_task("MEDIUM"),
+  File "/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py", line 8, in fail_task
+    raise Exception("Failure")
+Exception: Failure
+[2026-04-27T16:09:03.376+0000] {logging_mixin.py:188} INFO - [DEBUG] Retry attempt: 4 for task medium_priority
+[2026-04-27T16:09:03.376+0000] {taskinstance.py:1139} INFO - Marking task as FAILED. dag_id=exp_priority_retry, task_id=medium_priority, execution_date=20260427T160823, start_date=20260427T160903, end_date=20260427T160903
+[2026-04-27T16:09:03.385+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 122 for task medium_priority (Failure; 111831)
+[2026-04-27T16:09:03.395+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-27T16:09:03.402+0000] {taskinstance.py:3274} INFO - 0 downstream tasks scheduled from follow-on schedule check

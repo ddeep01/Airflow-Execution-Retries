@@ -1017,3 +1017,66 @@
 [2026-04-27T10:21:01.132+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:21:01.131+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-04-27T10:21:01.140+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:21:01.140+0000] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
 [2026-04-27T10:21:01.287+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.446 seconds
+[2026-04-27T14:46:56.539+0000] {processor.py:161} INFO - Started process (PID=8301) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:46:56.542+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2026-04-27T14:46:56.543+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:46:56.542+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:46:56.657+0000] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:46:56.738+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:46:56.738+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:46:56.746+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:46:56.746+0000] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2026-04-27T14:46:56.763+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.229 seconds
+[2026-04-27T14:48:23.831+0000] {processor.py:161} INFO - Started process (PID=8375) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:48:23.832+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2026-04-27T14:48:23.834+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:23.833+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:48:23.981+0000] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:48:24.151+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:24.151+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:48:24.160+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:24.160+0000] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2026-04-27T14:48:24.184+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.358 seconds
+[2026-04-27T14:49:17.801+0000] {processor.py:161} INFO - Started process (PID=8429) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:49:17.805+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2026-04-27T14:49:17.807+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:17.806+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:49:17.891+0000] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:49:17.976+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:17.976+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:49:17.984+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:17.984+0000] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2026-04-27T14:49:18.006+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.216 seconds
+[2026-04-27T14:50:07.160+0000] {processor.py:161} INFO - Started process (PID=8481) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:50:07.163+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2026-04-27T14:50:07.164+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:07.164+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:50:07.235+0000] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:50:07.318+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:07.318+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:50:07.327+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:07.327+0000] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2026-04-27T14:50:07.347+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.192 seconds
+[2026-04-27T14:50:53.884+0000] {processor.py:161} INFO - Started process (PID=8529) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:50:53.887+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2026-04-27T14:50:53.890+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:53.888+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:50:53.970+0000] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:50:54.059+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:54.058+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:50:54.076+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:54.076+0000] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2026-04-27T14:50:54.098+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.220 seconds
+[2026-04-27T14:51:34.457+0000] {processor.py:161} INFO - Started process (PID=8573) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:51:34.459+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2026-04-27T14:51:34.461+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:34.460+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:51:34.535+0000] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T14:51:34.622+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:34.622+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:51:34.630+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:34.630+0000] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2026-04-27T14:51:34.652+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.202 seconds
+[2026-04-27T15:05:00.697+0000] {processor.py:161} INFO - Started process (PID=8710) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T15:05:00.700+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2026-04-27T15:05:00.701+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:00.700+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T15:05:00.792+0000] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T15:05:00.902+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:00.901+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T15:05:00.924+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:00.923+0000] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2026-04-27T15:05:00.966+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.274 seconds
+[2026-04-27T15:05:55.554+0000] {processor.py:161} INFO - Started process (PID=8764) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T15:05:55.557+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2026-04-27T15:05:55.559+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:55.558+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T15:05:55.652+0000] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T15:05:55.752+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:55.751+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T15:05:55.765+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:55.765+0000] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2026-04-27T15:05:55.789+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.240 seconds
+[2026-04-27T15:06:47.550+0000] {processor.py:161} INFO - Started process (PID=8817) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T15:06:47.554+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2026-04-27T15:06:47.555+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:47.555+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T15:06:47.631+0000] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-04-27T15:06:47.716+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:47.716+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T15:06:47.724+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:47.723+0000] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2026-04-27T15:06:47.747+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.203 seconds

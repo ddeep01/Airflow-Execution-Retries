@@ -1304,3 +1304,87 @@
 [2026-04-27T10:20:31.305+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:20:31.305+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-04-27T10:20:31.318+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:20:31.318+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
 [2026-04-27T10:20:31.340+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.068 seconds
+[2026-04-27T14:46:36.162+0000] {processor.py:161} INFO - Started process (PID=8273) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:46:36.167+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T14:46:36.171+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:46:36.169+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:46:36.201+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:46:36.269+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:46:36.269+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:46:36.299+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:46:36.298+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T14:46:36.356+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.206 seconds
+[2026-04-27T14:48:02.667+0000] {processor.py:161} INFO - Started process (PID=8335) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:48:02.669+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T14:48:02.670+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:02.670+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:48:02.680+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:48:02.688+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:02.687+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:48:02.699+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:48:02.699+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T14:48:02.719+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.054 seconds
+[2026-04-27T14:49:01.368+0000] {processor.py:161} INFO - Started process (PID=8409) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:49:01.371+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T14:49:01.372+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:01.371+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:49:01.378+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:49:01.508+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:01.508+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:49:01.519+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:01.518+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T14:49:01.541+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.179 seconds
+[2026-04-27T14:49:45.530+0000] {processor.py:161} INFO - Started process (PID=8456) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:49:45.533+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T14:49:45.535+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:45.534+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:49:45.545+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:49:45.564+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:45.564+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:49:45.575+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:49:45.575+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T14:49:45.596+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.073 seconds
+[2026-04-27T14:50:25.315+0000] {processor.py:161} INFO - Started process (PID=8502) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:50:25.316+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T14:50:25.317+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:25.316+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:50:25.323+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:50:25.340+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:25.339+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:50:25.349+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:50:25.349+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T14:50:25.370+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.059 seconds
+[2026-04-27T14:51:05.592+0000] {processor.py:161} INFO - Started process (PID=8542) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:51:05.596+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T14:51:05.597+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:05.597+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:51:05.606+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:51:05.624+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:05.624+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:51:05.635+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:05.635+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T14:51:05.658+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.072 seconds
+[2026-04-27T14:51:44.754+0000] {processor.py:161} INFO - Started process (PID=8584) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:51:44.757+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T14:51:44.759+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:44.758+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:51:44.766+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T14:51:44.781+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:44.781+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T14:51:44.791+0000] {logging_mixin.py:188} INFO - [2026-04-27T14:51:44.791+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T14:51:44.812+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.062 seconds
+[2026-04-27T15:02:06.718+0000] {processor.py:161} INFO - Started process (PID=8645) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:02:06.749+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T15:02:06.757+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:02:06.755+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:02:06.771+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:02:06.807+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:02:06.807+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T15:02:06.827+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:02:06.827+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T15:02:06.992+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.289 seconds
+[2026-04-27T15:04:39.712+0000] {processor.py:161} INFO - Started process (PID=8682) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:04:39.716+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T15:04:39.717+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:04:39.716+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:04:39.725+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:04:39.746+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:04:39.746+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T15:04:39.759+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:04:39.759+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T15:04:39.781+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.072 seconds
+[2026-04-27T15:05:36.226+0000] {processor.py:161} INFO - Started process (PID=8745) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:05:36.231+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T15:05:36.233+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:36.232+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:05:36.245+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:05:36.278+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:36.278+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T15:05:36.301+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:05:36.300+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T15:05:36.324+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.108 seconds
+[2026-04-27T15:06:23.930+0000] {processor.py:161} INFO - Started process (PID=8793) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:06:23.934+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T15:06:23.936+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:23.935+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:06:23.942+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:06:23.966+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:23.966+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T15:06:23.983+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:06:23.983+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T15:06:24.016+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.091 seconds
+[2026-04-27T15:07:09.161+0000] {processor.py:161} INFO - Started process (PID=8838) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:07:09.164+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-04-27T15:07:09.164+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:07:09.164+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:07:09.174+0000] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-04-27T15:07:09.190+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:07:09.190+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T15:07:09.199+0000] {logging_mixin.py:188} INFO - [2026-04-27T15:07:09.199+0000] {dag.py:3823} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-04-27T15:07:09.224+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.066 seconds

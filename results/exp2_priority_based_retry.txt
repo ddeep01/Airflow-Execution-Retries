@@ -1,0 +1,27 @@
+Experiment 2: Priority-Based Retry Mechanism in Airflow
+
+We modified Apache Airflow's internal retry scheduling logic
+(fetch_handle_failure_context()) to dynamically adjust retry delays based on task priority.
+
+Implementation:
+
+HIGH priority → retry faster (0.5× delay → 5 sec)
+MEDIUM priority → normal delay (10 sec)
+LOW priority → slower retry (2× delay → 20 sec)
+
+Observations (from logs):
+
+HIGH priority tasks retried fastest (~6–7 sec)
+MEDIUM priority tasks retried at normal speed (~12–14 sec)
+LOW priority tasks retried slowest (~20+ sec)
+
+Note:
+Actual retry times slightly differ from expected delays due to:
+
+Scheduler heartbeat latency
+Task queueing delay
+Worker execution overhead
+
+Conclusion:
+Airflow retry behavior can be customized dynamically using task priority.
+This improves responsiveness for critical tasks while optimizing system resource utilization.
