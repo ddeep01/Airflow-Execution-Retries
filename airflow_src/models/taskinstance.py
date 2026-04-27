@@ -1106,57 +1106,73 @@ class TaskInstance(Base, LoggingMixin, BaseWorkload):
             prefix += f"map_index={self.map_index} "
         return prefix + f"[{self.state}] ti_id={self.id}>"
 
+    # def next_retry_datetime(self):
+    #     """
+    #     Get datetime of the next retry if the task instance fails.
+
+    #     For exponential backoff, retry_delay is used as base and will be converted to seconds.
+    #     """
+    #     from airflow.sdk.definitions._internal.abstractoperator import MAX_RETRY_DELAY
+
+    #     delay = self.task.retry_delay
+    #     multiplier = self.task.retry_exponential_backoff if self.task.retry_exponential_backoff != 0 else 1.0
+    #     if multiplier != 1.0 and multiplier > 0:
+    #         try:
+    #             # If the min_backoff calculation is below 1, it will be converted to 0 via int. Thus,
+    #             # we must round up prior to converting to an int, otherwise a divide by zero error
+    #             # will occur in the modded_hash calculation.
+    #             # this probably gives unexpected results if a task instance has previously been cleared,
+    #             # because try_number can increase without bound
+    #             min_backoff = math.ceil(delay.total_seconds() * (multiplier ** (self.try_number - 1)))
+    #         except OverflowError:
+    #             min_backoff = MAX_RETRY_DELAY
+    #             self.log.warning(
+    #                 "OverflowError occurred while calculating min_backoff, using MAX_RETRY_DELAY for min_backoff."
+    #             )
+
+    #         # In the case when delay.total_seconds() is 0, min_backoff will not be rounded up to 1.
+    #         # To address this, we impose a lower bound of 1 on min_backoff. This effectively makes
+    #         # the ceiling function unnecessary, but the ceiling function was retained to avoid
+    #         # introducing a breaking change.
+    #         if min_backoff < 1:
+    #             min_backoff = 1
+
+    #         # deterministic per task instance
+    #         ti_hash = int(
+    #             hashlib.sha1(
+    #                 f"{self.dag_id}#{self.task_id}#{self.logical_date}#{self.try_number}".encode(),
+    #                 usedforsecurity=False,
+    #             ).hexdigest(),
+    #             16,
+    #         )
+    #         # between 1 and 1.0 * delay * (multiplier^retry_number)
+    #         modded_hash = min_backoff + ti_hash % min_backoff
+    #         # timedelta has a maximum representable value. The exponentiation
+    #         # here means this value can be exceeded after a certain number
+    #         # of tries (around 50 if the initial delay is 1s, even fewer if
+    #         # the delay is larger). Cap the value here before creating a
+    #         # timedelta object so the operation doesn't fail with "OverflowError".
+    #         delay_backoff_in_seconds = min(modded_hash, MAX_RETRY_DELAY)
+    #         delay = timedelta(seconds=delay_backoff_in_seconds)
+    #         if self.task.max_retry_delay:
+    #             delay = min(self.task.max_retry_delay, delay)
+    #     return self.end_date + delay
+
     def next_retry_datetime(self):
         """
-        Get datetime of the next retry if the task instance fails.
-
-        For exponential backoff, retry_delay is used as base and will be converted to seconds.
+            Custom retry logic: deterministic exponential backoff
         """
-        from airflow.sdk.definitions._internal.abstractoperator import MAX_RETRY_DELAY
 
-        delay = self.task.retry_delay
-        multiplier = self.task.retry_exponential_backoff if self.task.retry_exponential_backoff != 0 else 1.0
-        if multiplier != 1.0 and multiplier > 0:
-            try:
-                # If the min_backoff calculation is below 1, it will be converted to 0 via int. Thus,
-                # we must round up prior to converting to an int, otherwise a divide by zero error
-                # will occur in the modded_hash calculation.
-                # this probably gives unexpected results if a task instance has previously been cleared,
-                # because try_number can increase without bound
-                min_backoff = math.ceil(delay.total_seconds() * (multiplier ** (self.try_number - 1)))
-            except OverflowError:
-                min_backoff = MAX_RETRY_DELAY
-                self.log.warning(
-                    "OverflowError occurred while calculating min_backoff, using MAX_RETRY_DELAY for min_backoff."
-                )
+        delay_seconds = self.task.retry_delay.total_seconds()
 
-            # In the case when delay.total_seconds() is 0, min_backoff will not be rounded up to 1.
-            # To address this, we impose a lower bound of 1 on min_backoff. This effectively makes
-            # the ceiling function unnecessary, but the ceiling function was retained to avoid
-            # introducing a breaking change.
-            if min_backoff < 1:
-                min_backoff = 1
+        # Exponential backoff
+        delay_seconds = delay_seconds * (2 ** (self.try_number - 1))
 
-            # deterministic per task instance
-            ti_hash = int(
-                hashlib.sha1(
-                    f"{self.dag_id}#{self.task_id}#{self.logical_date}#{self.try_number}".encode(),
-                    usedforsecurity=False,
-                ).hexdigest(),
-                16,
-            )
-            # between 1 and 1.0 * delay * (multiplier^retry_number)
-            modded_hash = min_backoff + ti_hash % min_backoff
-            # timedelta has a maximum representable value. The exponentiation
-            # here means this value can be exceeded after a certain number
-            # of tries (around 50 if the initial delay is 1s, even fewer if
-            # the delay is larger). Cap the value here before creating a
-            # timedelta object so the operation doesn't fail with "OverflowError".
-            delay_backoff_in_seconds = min(modded_hash, MAX_RETRY_DELAY)
-            delay = timedelta(seconds=delay_backoff_in_seconds)
-            if self.task.max_retry_delay:
-                delay = min(self.task.max_retry_delay, delay)
-        return self.end_date + delay
+        delay = timedelta(seconds=delay_seconds)
+
+        base_time = self.end_date or timezone.utcnow()
+
+        return base_time + delay
 
     def ready_for_retry(self) -> bool:
         """Check on whether the task instance is in the right state and timeframe to be retried."""
@@ -1700,6 +1716,7 @@ class TaskInstance(Base, LoggingMixin, BaseWorkload):
             ti.refresh_from_db(session)
 
         ti.end_date = timezone.utcnow()
+        print(f"[DEBUG] Retry attempt: {ti.try_number} for task {ti.task_id}")
         ti.set_duration()
 
         DualStatsManager.incr(

@@ -1,0 +1,935 @@
+[2026-04-27T05:13:05.997+0000] {processor.py:161} INFO - Started process (PID=1447) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:13:05.998+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:13:06.000+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:13:05.999+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:13:06.017+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:13:06.147+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:13:06.146+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:example_complex
+[2026-04-27T05:13:06.164+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:13:06.164+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_complex
+[2026-04-27T05:13:06.174+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:13:06.174+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_complex
+[2026-04-27T05:13:06.175+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:13:06.174+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:13:06.188+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:13:06.188+0000] {dag.py:3058} INFO - Creating ORM DAG for example_complex
+[2026-04-27T05:13:06.188+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:13:06.188+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:13:06.212+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.219 seconds
+[2026-04-27T05:14:03.014+0000] {processor.py:161} INFO - Started process (PID=1518) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:14:03.019+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:14:03.022+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:14:03.020+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:14:03.053+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:14:03.159+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:14:03.158+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:14:03.190+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:14:03.189+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:14:03.239+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.232 seconds
+[2026-04-27T05:14:51.779+0000] {processor.py:161} INFO - Started process (PID=1574) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:14:51.781+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:14:51.783+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:14:51.782+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:14:51.790+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:14:51.805+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:14:51.804+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:14:51.812+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:14:51.812+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:14:51.828+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.051 seconds
+[2026-04-27T05:15:43.880+0000] {processor.py:161} INFO - Started process (PID=1636) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:15:43.883+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:15:43.884+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:15:43.884+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:15:43.893+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:15:43.910+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:15:43.909+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:15:43.918+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:15:43.918+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:15:43.933+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.060 seconds
+[2026-04-27T05:16:26.182+0000] {processor.py:161} INFO - Started process (PID=1687) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:16:26.186+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:16:26.187+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:16:26.187+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:16:26.194+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:16:26.209+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:16:26.209+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:16:26.216+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:16:26.216+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:16:26.232+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.054 seconds
+[2026-04-27T05:17:17.671+0000] {processor.py:161} INFO - Started process (PID=1749) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:17:17.672+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:17:17.673+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:17:17.672+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:17:17.680+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:17:17.695+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:17:17.695+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:17:17.702+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:17:17.702+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:17:17.717+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.049 seconds
+[2026-04-27T05:18:10.314+0000] {processor.py:161} INFO - Started process (PID=1830) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:18:10.317+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:18:10.317+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:18:10.317+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:18:10.326+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:18:10.342+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:18:10.342+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:18:10.354+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:18:10.354+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:18:10.371+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.059 seconds
+[2026-04-27T05:19:03.012+0000] {processor.py:161} INFO - Started process (PID=1894) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:19:03.016+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:19:03.017+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:19:03.017+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:19:03.024+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:19:03.039+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:19:03.038+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:19:03.045+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:19:03.045+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:19:03.061+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.053 seconds
+[2026-04-27T05:19:59.854+0000] {processor.py:161} INFO - Started process (PID=1962) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:19:59.857+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:19:59.858+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:19:59.858+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:19:59.869+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:19:59.893+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:19:59.893+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:19:59.900+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:19:59.900+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:19:59.916+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.069 seconds
+[2026-04-27T05:20:55.055+0000] {processor.py:161} INFO - Started process (PID=2040) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:20:55.056+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:20:55.056+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:20:55.056+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:20:55.065+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:20:55.082+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:20:55.082+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:20:55.091+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:20:55.091+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:20:55.110+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.058 seconds
+[2026-04-27T05:21:48.500+0000] {processor.py:161} INFO - Started process (PID=15480) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:21:48.505+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:21:48.506+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:21:48.506+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:21:48.528+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:21:48.583+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:21:48.582+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:21:48.612+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:21:48.607+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:21:48.654+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.160 seconds
+[2026-04-27T05:22:37.648+0000] {processor.py:161} INFO - Started process (PID=24856) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:22:37.678+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:22:37.679+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:22:37.679+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:22:37.692+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:22:37.711+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:22:37.711+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:22:37.719+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:22:37.718+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:22:37.737+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.092 seconds
+[2026-04-27T05:23:33.025+0000] {processor.py:161} INFO - Started process (PID=24936) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:23:33.026+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:23:33.027+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:23:33.026+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:23:33.033+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:23:33.048+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:23:33.048+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:23:33.055+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:23:33.055+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:23:33.070+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.048 seconds
+[2026-04-27T05:24:24.134+0000] {processor.py:161} INFO - Started process (PID=25101) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:24:24.137+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:24:24.139+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:24:24.138+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:24:24.160+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:24:24.203+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:24:24.203+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:24:24.214+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:24:24.213+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:24:24.237+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.109 seconds
+[2026-04-27T05:25:21.705+0000] {processor.py:161} INFO - Started process (PID=25350) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:25:21.708+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:25:21.710+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:25:21.709+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:25:21.719+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:25:21.746+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:25:21.746+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:25:21.759+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:25:21.759+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:25:21.865+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.171 seconds
+[2026-04-27T05:26:02.867+0000] {processor.py:161} INFO - Started process (PID=25779) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:26:02.870+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:26:02.871+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:26:02.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:26:02.878+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:26:02.900+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:26:02.900+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:26:02.908+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:26:02.908+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:26:02.926+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.064 seconds
+[2026-04-27T05:56:07.325+0000] {processor.py:161} INFO - Started process (PID=67256) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:56:07.328+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:56:07.329+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:56:07.329+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:56:07.337+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:56:07.354+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:56:07.354+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:56:07.362+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:56:07.361+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:56:07.378+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.055 seconds
+[2026-04-27T05:56:55.941+0000] {processor.py:161} INFO - Started process (PID=67309) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:56:55.943+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:56:55.944+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:56:55.944+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:56:55.956+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:56:55.975+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:56:55.975+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:56:55.981+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:56:55.981+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:56:55.997+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.059 seconds
+[2026-04-27T05:58:27.923+0000] {processor.py:161} INFO - Started process (PID=67379) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:58:27.925+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:58:27.929+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:58:27.926+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:58:27.948+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:58:27.973+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:58:27.972+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:58:27.984+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:58:27.984+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:58:28.009+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.097 seconds
+[2026-04-27T05:59:18.003+0000] {processor.py:161} INFO - Started process (PID=67440) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:59:18.007+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T05:59:18.008+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:59:18.007+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:59:18.017+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T05:59:18.049+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:59:18.049+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T05:59:18.059+0000] {logging_mixin.py:188} INFO - [2026-04-27T05:59:18.058+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T05:59:18.075+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.078 seconds
+[2026-04-27T06:00:05.869+0000] {processor.py:161} INFO - Started process (PID=67495) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:00:05.871+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:00:05.872+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:00:05.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:00:05.878+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:00:05.894+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:00:05.894+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:00:05.901+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:00:05.901+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:00:05.917+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.051 seconds
+[2026-04-27T06:00:59.866+0000] {processor.py:161} INFO - Started process (PID=67552) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:00:59.868+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:00:59.868+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:00:59.868+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:00:59.875+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:00:59.892+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:00:59.891+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:00:59.901+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:00:59.901+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:00:59.916+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.053 seconds
+[2026-04-27T06:01:55.926+0000] {processor.py:161} INFO - Started process (PID=67616) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:01:55.929+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:01:55.930+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:01:55.930+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:01:55.937+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:01:55.953+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:01:55.953+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:01:55.961+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:01:55.961+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:01:55.979+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.058 seconds
+[2026-04-27T06:02:47.363+0000] {processor.py:161} INFO - Started process (PID=67672) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:02:47.365+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:02:47.365+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:02:47.365+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:02:47.373+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:02:47.390+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:02:47.390+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:02:47.398+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:02:47.398+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:02:47.413+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.053 seconds
+[2026-04-27T06:03:37.842+0000] {processor.py:161} INFO - Started process (PID=67732) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:03:37.843+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:03:37.844+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:03:37.843+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:03:37.850+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:03:37.867+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:03:37.866+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:03:37.875+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:03:37.875+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:03:37.893+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.054 seconds
+[2026-04-27T06:04:30.471+0000] {processor.py:161} INFO - Started process (PID=67790) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:04:30.473+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:04:30.473+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:04:30.473+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:04:30.480+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:04:30.496+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:04:30.495+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:04:30.504+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:04:30.504+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:04:30.519+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.050 seconds
+[2026-04-27T06:05:25.947+0000] {processor.py:161} INFO - Started process (PID=67855) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:05:25.949+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:05:25.950+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:05:25.950+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:05:25.956+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:05:25.975+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:05:25.975+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:05:25.986+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:05:25.986+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:05:26.003+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.060 seconds
+[2026-04-27T06:06:18.668+0000] {processor.py:161} INFO - Started process (PID=67914) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:06:18.670+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:06:18.672+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:06:18.671+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:06:18.678+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:06:18.693+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:06:18.692+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:06:18.699+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:06:18.699+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:06:18.715+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.049 seconds
+[2026-04-27T06:07:13.995+0000] {processor.py:161} INFO - Started process (PID=67979) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:07:13.997+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:07:13.998+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:07:13.998+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:07:14.007+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:07:14.026+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:07:14.025+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:07:14.034+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:07:14.034+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:07:14.052+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.060 seconds
+[2026-04-27T06:08:05.840+0000] {processor.py:161} INFO - Started process (PID=68037) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:08:05.843+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:08:05.844+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:08:05.843+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:08:05.850+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:08:05.867+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:08:05.867+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:08:05.876+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:08:05.875+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:08:05.892+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.055 seconds
+[2026-04-27T06:08:59.763+0000] {processor.py:161} INFO - Started process (PID=68098) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:08:59.766+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:08:59.767+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:08:59.766+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:08:59.775+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:08:59.795+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:08:59.795+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:08:59.806+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:08:59.805+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:08:59.825+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.065 seconds
+[2026-04-27T06:09:52.417+0000] {processor.py:161} INFO - Started process (PID=68160) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:09:52.420+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:09:52.421+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:09:52.420+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:09:52.428+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:09:52.446+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:09:52.446+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:09:52.455+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:09:52.455+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:09:52.473+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.059 seconds
+[2026-04-27T06:10:44.991+0000] {processor.py:161} INFO - Started process (PID=68219) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:10:44.995+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:10:44.997+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:10:44.996+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:10:45.011+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:10:45.040+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:10:45.040+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:10:45.051+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:10:45.051+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:10:45.071+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.084 seconds
+[2026-04-27T06:11:35.364+0000] {processor.py:161} INFO - Started process (PID=68278) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:11:35.367+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:11:35.368+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:11:35.368+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:11:35.377+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:11:35.397+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:11:35.397+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:11:35.406+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:11:35.406+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:11:35.425+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.064 seconds
+[2026-04-27T06:12:29.537+0000] {processor.py:161} INFO - Started process (PID=68340) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:12:29.574+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:12:29.576+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:12:29.576+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:12:29.585+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:12:29.601+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:12:29.601+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:12:29.609+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:12:29.609+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:12:29.626+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.091 seconds
+[2026-04-27T06:13:26.294+0000] {processor.py:161} INFO - Started process (PID=68403) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:13:26.295+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:13:26.297+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:13:26.296+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:13:26.311+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:13:26.334+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:13:26.333+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:13:26.344+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:13:26.344+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:13:26.371+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.080 seconds
+[2026-04-27T06:14:21.045+0000] {processor.py:161} INFO - Started process (PID=68463) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:14:21.047+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:14:21.048+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:14:21.048+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:14:21.055+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:14:21.073+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:14:21.072+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:14:21.082+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:14:21.081+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:14:21.100+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.057 seconds
+[2026-04-27T06:15:13.089+0000] {processor.py:161} INFO - Started process (PID=68528) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:15:13.091+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:15:13.092+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:15:13.092+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:15:13.100+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:15:13.116+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:15:13.116+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:15:13.124+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:15:13.123+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:15:13.140+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.053 seconds
+[2026-04-27T06:16:10.461+0000] {processor.py:161} INFO - Started process (PID=68590) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:16:10.463+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:16:10.464+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:16:10.463+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:16:10.470+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:16:10.485+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:16:10.485+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:16:10.492+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:16:10.492+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:16:10.511+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.052 seconds
+[2026-04-27T06:17:02.428+0000] {processor.py:161} INFO - Started process (PID=68655) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:17:02.430+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:17:02.431+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:17:02.431+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:17:02.437+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:17:02.452+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:17:02.452+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:17:02.458+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:17:02.458+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:17:02.473+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.048 seconds
+[2026-04-27T06:17:52.753+0000] {processor.py:161} INFO - Started process (PID=68714) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:17:52.756+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:17:52.757+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:17:52.757+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:17:52.764+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:17:52.782+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:17:52.781+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:17:52.789+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:17:52.789+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:17:52.808+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.057 seconds
+[2026-04-27T06:18:46.431+0000] {processor.py:161} INFO - Started process (PID=68773) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:18:46.433+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:18:46.434+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:18:46.434+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:18:46.444+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:18:46.466+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:18:46.465+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:18:46.477+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:18:46.477+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:18:46.495+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.066 seconds
+[2026-04-27T06:19:37.858+0000] {processor.py:161} INFO - Started process (PID=68833) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:19:37.861+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:19:37.862+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:19:37.862+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:19:37.871+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:19:37.892+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:19:37.892+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:19:37.901+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:19:37.901+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:19:37.919+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.064 seconds
+[2026-04-27T06:20:32.036+0000] {processor.py:161} INFO - Started process (PID=68912) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:20:32.038+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:20:32.039+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:20:32.039+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:20:32.046+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:20:32.063+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:20:32.063+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:20:32.070+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:20:32.070+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:20:32.087+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.054 seconds
+[2026-04-27T06:21:27.643+0000] {processor.py:161} INFO - Started process (PID=68974) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:21:27.646+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:21:27.647+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:21:27.647+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:21:27.655+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:21:27.674+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:21:27.674+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:21:27.684+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:21:27.684+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:21:27.704+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.063 seconds
+[2026-04-27T06:22:16.345+0000] {processor.py:161} INFO - Started process (PID=69034) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:22:16.348+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:22:16.349+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:22:16.348+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:22:16.356+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:22:16.371+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:22:16.371+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:22:16.378+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:22:16.378+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:22:16.395+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.052 seconds
+[2026-04-27T06:23:11.298+0000] {processor.py:161} INFO - Started process (PID=69095) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:23:11.301+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T06:23:11.301+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:23:11.301+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:23:11.308+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T06:23:11.324+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:23:11.324+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T06:23:11.331+0000] {logging_mixin.py:188} INFO - [2026-04-27T06:23:11.331+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T06:23:11.347+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.051 seconds
+[2026-04-27T08:44:29.664+0000] {processor.py:161} INFO - Started process (PID=69176) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:44:29.670+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:44:29.674+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:44:29.673+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:44:29.715+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:44:29.818+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:44:29.818+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:44:29.856+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:44:29.855+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:44:29.931+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.294 seconds
+[2026-04-27T08:45:34.772+0000] {processor.py:161} INFO - Started process (PID=69248) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:45:34.777+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:45:34.778+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:45:34.777+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:45:34.791+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:45:34.841+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:45:34.841+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:45:34.867+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:45:34.865+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:45:34.922+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.156 seconds
+[2026-04-27T08:46:34.742+0000] {processor.py:161} INFO - Started process (PID=69311) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:46:34.746+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:46:34.748+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:46:34.747+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:46:34.761+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:46:34.788+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:46:34.788+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:46:34.815+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:46:34.814+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:46:34.838+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.103 seconds
+[2026-04-27T08:47:35.215+0000] {processor.py:161} INFO - Started process (PID=69377) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:47:35.217+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:47:35.218+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:47:35.218+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:47:35.241+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:47:35.292+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:47:35.291+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:47:35.310+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:47:35.309+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:47:35.340+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.138 seconds
+[2026-04-27T08:48:32.919+0000] {processor.py:161} INFO - Started process (PID=69438) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:48:32.921+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:48:32.922+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:48:32.922+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:48:32.933+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:48:32.954+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:48:32.954+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:48:32.964+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:48:32.964+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:48:32.986+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.072 seconds
+[2026-04-27T08:49:25.189+0000] {processor.py:161} INFO - Started process (PID=69494) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:49:25.194+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:49:25.195+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:49:25.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:49:25.207+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:49:25.229+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:49:25.229+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:49:25.240+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:49:25.240+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:49:25.265+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.081 seconds
+[2026-04-27T08:50:22.926+0000] {processor.py:161} INFO - Started process (PID=69554) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:50:22.929+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:50:22.930+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:50:22.930+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:50:22.943+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:50:22.967+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:50:22.967+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:50:22.977+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:50:22.977+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:50:22.998+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.078 seconds
+[2026-04-27T08:51:19.523+0000] {processor.py:161} INFO - Started process (PID=69614) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:51:19.526+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:51:19.528+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:51:19.527+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:51:19.538+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:51:19.563+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:51:19.563+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:51:19.570+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:51:19.570+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:51:19.600+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.079 seconds
+[2026-04-27T08:52:01.440+0000] {processor.py:161} INFO - Started process (PID=69818) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:52:01.446+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:52:01.447+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:52:01.446+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:52:01.459+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:52:01.493+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:52:01.492+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:52:01.507+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:52:01.505+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:52:01.537+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.103 seconds
+[2026-04-27T08:53:04.915+0000] {processor.py:161} INFO - Started process (PID=69901) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:53:04.918+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:53:04.919+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:53:04.918+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:53:04.934+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:53:04.965+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:53:04.965+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:53:04.977+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:53:04.977+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:53:05.014+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.106 seconds
+[2026-04-27T08:53:56.124+0000] {processor.py:161} INFO - Started process (PID=69967) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:53:56.128+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:53:56.129+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:53:56.129+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:53:56.138+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:53:56.167+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:53:56.167+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:53:56.179+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:53:56.179+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:53:56.201+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.084 seconds
+[2026-04-27T08:54:55.383+0000] {processor.py:161} INFO - Started process (PID=70024) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:54:55.386+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:54:55.388+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:54:55.387+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:54:55.397+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:54:55.419+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:54:55.418+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:54:55.429+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:54:55.428+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:54:55.452+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.072 seconds
+[2026-04-27T08:55:42.000+0000] {processor.py:161} INFO - Started process (PID=70073) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:55:42.003+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:55:42.004+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:55:42.004+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:55:42.017+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:55:42.043+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:55:42.042+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:55:42.054+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:55:42.054+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:55:42.076+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.082 seconds
+[2026-04-27T08:56:45.390+0000] {processor.py:161} INFO - Started process (PID=70145) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:56:45.393+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:56:45.394+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:56:45.393+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:56:45.407+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:56:45.426+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:56:45.426+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:56:45.438+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:56:45.437+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:56:45.462+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.075 seconds
+[2026-04-27T08:57:27.023+0000] {processor.py:161} INFO - Started process (PID=70187) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:57:27.026+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:57:27.027+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:57:27.027+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:57:27.042+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:57:27.070+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:57:27.070+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:57:27.080+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:57:27.079+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:57:27.100+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.081 seconds
+[2026-04-27T08:58:25.231+0000] {processor.py:161} INFO - Started process (PID=70249) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:58:25.234+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:58:25.235+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:58:25.234+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:58:25.244+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:58:25.273+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:58:25.273+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:58:25.285+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:58:25.285+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:58:25.306+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.077 seconds
+[2026-04-27T08:59:24.755+0000] {processor.py:161} INFO - Started process (PID=70656) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:59:24.756+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T08:59:24.758+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:59:24.757+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:59:24.767+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T08:59:24.791+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:59:24.790+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T08:59:24.804+0000] {logging_mixin.py:188} INFO - [2026-04-27T08:59:24.804+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T08:59:24.825+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.077 seconds
+[2026-04-27T09:00:24.148+0000] {processor.py:161} INFO - Started process (PID=70842) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:00:24.151+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:00:24.151+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:00:24.151+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:00:24.164+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:00:24.189+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:00:24.189+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:00:24.202+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:00:24.202+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:00:24.225+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.080 seconds
+[2026-04-27T09:01:23.520+0000] {processor.py:161} INFO - Started process (PID=70909) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:01:23.524+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:01:23.525+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:01:23.524+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:01:23.536+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:01:23.557+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:01:23.556+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:01:23.567+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:01:23.567+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:01:23.589+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.074 seconds
+[2026-04-27T09:02:07.485+0000] {processor.py:161} INFO - Started process (PID=70956) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:02:07.488+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:02:07.493+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:02:07.492+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:02:07.503+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:02:07.536+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:02:07.535+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:02:07.552+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:02:07.552+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:02:07.578+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.097 seconds
+[2026-04-27T09:02:49.076+0000] {processor.py:161} INFO - Started process (PID=71393) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:02:49.080+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:02:49.081+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:02:49.081+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:02:49.090+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:02:49.115+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:02:49.115+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:02:49.127+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:02:49.127+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:02:49.151+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.079 seconds
+[2026-04-27T09:03:46.263+0000] {processor.py:161} INFO - Started process (PID=72048) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:03:46.266+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:03:46.266+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:03:46.266+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:03:46.276+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:03:46.298+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:03:46.298+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:03:46.318+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:03:46.317+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:03:46.343+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.083 seconds
+[2026-04-27T09:04:45.999+0000] {processor.py:161} INFO - Started process (PID=72429) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:04:46.002+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:04:46.003+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:04:46.003+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:04:46.013+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:04:46.035+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:04:46.034+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:04:46.046+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:04:46.045+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:04:46.075+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.085 seconds
+[2026-04-27T09:05:47.474+0000] {processor.py:161} INFO - Started process (PID=78318) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:05:47.478+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:05:47.479+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:05:47.478+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:05:47.491+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:05:47.515+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:05:47.514+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:05:47.526+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:05:47.526+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:05:47.547+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.081 seconds
+[2026-04-27T09:06:41.088+0000] {processor.py:161} INFO - Started process (PID=78380) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:06:41.091+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:06:41.092+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:06:41.092+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:06:41.102+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:06:41.122+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:06:41.122+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:06:41.133+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:06:41.133+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:06:41.154+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.071 seconds
+[2026-04-27T09:07:39.258+0000] {processor.py:161} INFO - Started process (PID=78440) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:07:39.262+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:07:39.263+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:07:39.263+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:07:39.274+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:07:39.295+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:07:39.294+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:07:39.304+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:07:39.304+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:07:39.324+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.071 seconds
+[2026-04-27T09:08:38.880+0000] {processor.py:161} INFO - Started process (PID=78502) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:08:38.883+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:08:38.884+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:08:38.884+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:08:38.895+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:08:38.915+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:08:38.915+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:08:38.926+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:08:38.926+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:08:38.951+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.076 seconds
+[2026-04-27T09:09:38.246+0000] {processor.py:161} INFO - Started process (PID=78582) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:09:38.249+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:09:38.249+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:09:38.249+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:09:38.260+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:09:38.282+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:09:38.282+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:09:38.294+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:09:38.294+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:09:38.314+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.071 seconds
+[2026-04-27T09:10:35.596+0000] {processor.py:161} INFO - Started process (PID=78695) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:10:35.599+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:10:35.600+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:10:35.600+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:10:35.614+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:10:35.634+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:10:35.634+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:10:35.643+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:10:35.643+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:10:35.663+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.077 seconds
+[2026-04-27T09:11:20.582+0000] {processor.py:161} INFO - Started process (PID=78940) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:11:20.584+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:11:20.586+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:11:20.585+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:11:20.608+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:11:20.668+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:11:20.668+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:11:20.692+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:11:20.691+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:11:20.736+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.164 seconds
+[2026-04-27T09:12:05.083+0000] {processor.py:161} INFO - Started process (PID=79617) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:12:05.086+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:12:05.091+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:12:05.089+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:12:05.115+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:12:05.172+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:12:05.172+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:12:05.204+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:12:05.204+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:12:05.248+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.180 seconds
+[2026-04-27T09:13:06.418+0000] {processor.py:161} INFO - Started process (PID=79829) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:13:06.421+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:13:06.422+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:13:06.422+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:13:06.431+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:13:06.455+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:13:06.455+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:13:06.470+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:13:06.470+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:13:06.488+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.073 seconds
+[2026-04-27T09:13:50.221+0000] {processor.py:161} INFO - Started process (PID=79876) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:13:50.224+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:13:50.226+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:13:50.224+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:13:50.235+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:13:50.256+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:13:50.256+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:13:50.268+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:13:50.268+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:13:50.286+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.069 seconds
+[2026-04-27T09:14:48.442+0000] {processor.py:161} INFO - Started process (PID=79937) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:14:48.445+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:14:48.446+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:14:48.446+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:14:48.460+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:14:48.481+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:14:48.481+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:14:48.494+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:14:48.494+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:14:48.515+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.078 seconds
+[2026-04-27T09:15:44.941+0000] {processor.py:161} INFO - Started process (PID=80000) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:15:44.946+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:15:44.947+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:15:44.947+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:15:44.957+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:15:44.980+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:15:44.980+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:15:44.989+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:15:44.988+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:15:45.011+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.074 seconds
+[2026-04-27T09:16:44.568+0000] {processor.py:161} INFO - Started process (PID=80064) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:16:44.571+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:16:44.573+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:16:44.572+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:16:44.587+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:16:44.610+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:16:44.610+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:16:44.621+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:16:44.621+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:16:44.642+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.081 seconds
+[2026-04-27T09:17:44.298+0000] {processor.py:161} INFO - Started process (PID=80128) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:17:44.299+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:17:44.300+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:17:44.300+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:17:44.315+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:17:44.352+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:17:44.352+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:17:44.372+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:17:44.371+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:17:44.403+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.111 seconds
+[2026-04-27T09:18:26.608+0000] {processor.py:161} INFO - Started process (PID=80171) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:18:26.610+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:18:26.611+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:18:26.610+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:18:26.620+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:18:26.647+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:18:26.642+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:18:26.658+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:18:26.658+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:18:26.685+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.084 seconds
+[2026-04-27T09:19:24.550+0000] {processor.py:161} INFO - Started process (PID=80251) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:19:24.552+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:19:24.553+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:19:24.553+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:19:24.561+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:19:24.579+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:19:24.579+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:19:24.589+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:19:24.588+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:19:24.609+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.061 seconds
+[2026-04-27T09:20:18.933+0000] {processor.py:161} INFO - Started process (PID=80310) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:20:18.938+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:20:18.940+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:20:18.939+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:20:18.950+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:20:18.972+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:20:18.972+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:20:18.983+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:20:18.983+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:20:19.003+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.075 seconds
+[2026-04-27T09:21:19.982+0000] {processor.py:161} INFO - Started process (PID=80373) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:21:19.985+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:21:19.987+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:21:19.987+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:21:19.996+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:21:20.020+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:21:20.020+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:21:20.030+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:21:20.030+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:21:20.053+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.075 seconds
+[2026-04-27T09:22:18.468+0000] {processor.py:161} INFO - Started process (PID=80435) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:22:18.471+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:22:18.475+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:22:18.474+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:22:18.485+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:22:18.508+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:22:18.508+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:22:18.517+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:22:18.517+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:22:18.536+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.073 seconds
+[2026-04-27T09:23:16.665+0000] {processor.py:161} INFO - Started process (PID=80498) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:23:16.668+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:23:16.669+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:23:16.669+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:23:16.680+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:23:16.705+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:23:16.704+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:23:16.716+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:23:16.715+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:23:16.736+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.078 seconds
+[2026-04-27T09:23:57.943+0000] {processor.py:161} INFO - Started process (PID=80540) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:23:57.947+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:23:57.948+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:23:57.947+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:23:57.958+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:23:57.997+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:23:57.997+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:23:58.017+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:23:58.016+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:23:58.059+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.121 seconds
+[2026-04-27T09:24:58.394+0000] {processor.py:161} INFO - Started process (PID=80605) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:24:58.398+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:24:58.399+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:24:58.398+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:24:58.411+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:24:58.443+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:24:58.443+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:24:58.454+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:24:58.454+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:24:58.477+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.087 seconds
+[2026-04-27T09:25:42.096+0000] {processor.py:161} INFO - Started process (PID=80648) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:25:42.099+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:25:42.100+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:25:42.100+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:25:42.113+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:25:42.138+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:25:42.137+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:25:42.146+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:25:42.146+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:25:42.172+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.083 seconds
+[2026-04-27T09:26:37.687+0000] {processor.py:161} INFO - Started process (PID=80708) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:26:37.690+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:26:37.691+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:26:37.690+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:26:37.703+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:26:37.726+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:26:37.726+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:26:37.736+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:26:37.736+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:26:37.756+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.074 seconds
+[2026-04-27T09:27:33.030+0000] {processor.py:161} INFO - Started process (PID=80766) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:27:33.034+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:27:33.035+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:27:33.034+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:27:33.045+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:27:33.069+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:27:33.069+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:27:33.080+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:27:33.080+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:27:33.106+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.084 seconds
+[2026-04-27T09:28:27.403+0000] {processor.py:161} INFO - Started process (PID=80824) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:28:27.406+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:28:27.407+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:28:27.406+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:28:27.416+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:28:27.440+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:28:27.440+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:28:27.451+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:28:27.450+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:28:27.469+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.069 seconds
+[2026-04-27T09:29:25.466+0000] {processor.py:161} INFO - Started process (PID=80887) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:29:25.468+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:29:25.469+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:29:25.469+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:29:25.479+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:29:25.501+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:29:25.501+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:29:25.513+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:29:25.513+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:29:25.534+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.076 seconds
+[2026-04-27T09:30:24.095+0000] {processor.py:161} INFO - Started process (PID=80947) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:30:24.099+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:30:24.101+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:30:24.100+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:30:24.112+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:30:24.134+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:30:24.134+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:30:24.147+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:30:24.147+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:30:24.168+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.078 seconds
+[2026-04-27T09:31:20.514+0000] {processor.py:161} INFO - Started process (PID=81008) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:31:20.518+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:31:20.520+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:31:20.519+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:31:20.534+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:31:20.562+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:31:20.562+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:31:20.571+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:31:20.571+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:31:20.592+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.085 seconds
+[2026-04-27T09:32:17.559+0000] {processor.py:161} INFO - Started process (PID=81070) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:32:17.562+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:32:17.563+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:32:17.562+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:32:17.578+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:32:17.599+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:32:17.599+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:32:17.609+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:32:17.609+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:32:17.631+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.086 seconds
+[2026-04-27T09:33:10.136+0000] {processor.py:161} INFO - Started process (PID=81127) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:33:10.139+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:33:10.140+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:33:10.140+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:33:10.153+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:33:10.174+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:33:10.174+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:33:10.185+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:33:10.185+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:33:10.205+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.074 seconds
+[2026-04-27T09:33:50.776+0000] {processor.py:161} INFO - Started process (PID=81173) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:33:50.779+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:33:50.780+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:33:50.780+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:33:50.791+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:33:50.811+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:33:50.811+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:33:50.820+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:33:50.820+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:33:50.839+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.076 seconds
+[2026-04-27T09:34:49.427+0000] {processor.py:161} INFO - Started process (PID=81233) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:34:49.431+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:34:49.432+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:34:49.431+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:34:49.450+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:34:49.479+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:34:49.479+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:34:49.495+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:34:49.495+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:34:49.521+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.099 seconds
+[2026-04-27T09:35:31.759+0000] {processor.py:161} INFO - Started process (PID=81278) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:35:31.762+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:35:31.763+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:35:31.762+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:35:31.774+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:35:31.794+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:35:31.794+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:35:31.806+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:35:31.806+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:35:31.827+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.073 seconds
+[2026-04-27T09:36:13.188+0000] {processor.py:161} INFO - Started process (PID=81319) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:36:13.191+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:36:13.192+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:36:13.191+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:36:13.204+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:36:13.231+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:36:13.231+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:36:13.243+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:36:13.243+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:36:13.265+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.081 seconds
+[2026-04-27T09:37:06.617+0000] {processor.py:161} INFO - Started process (PID=81379) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:37:06.620+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:37:06.621+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:37:06.621+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:37:06.639+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:37:06.713+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:37:06.712+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:37:06.738+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:37:06.738+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:37:06.796+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.187 seconds
+[2026-04-27T09:38:07.091+0000] {processor.py:161} INFO - Started process (PID=81442) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:38:07.099+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:38:07.100+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:38:07.100+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:38:07.109+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:38:07.129+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:38:07.129+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:38:07.144+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:38:07.144+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:38:07.166+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.080 seconds
+[2026-04-27T09:38:48.752+0000] {processor.py:161} INFO - Started process (PID=81485) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:38:48.756+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:38:48.758+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:38:48.757+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:38:48.769+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:38:48.789+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:38:48.789+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:38:48.798+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:38:48.798+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:38:48.818+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.071 seconds
+[2026-04-27T09:39:46.600+0000] {processor.py:161} INFO - Started process (PID=81547) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:39:46.633+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:39:46.635+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:39:46.634+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:39:46.652+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:39:46.676+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:39:46.676+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:39:46.686+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:39:46.686+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:39:46.707+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.116 seconds
+[2026-04-27T09:40:40.800+0000] {processor.py:161} INFO - Started process (PID=81604) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:40:40.802+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T09:40:40.803+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:40:40.803+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:40:40.817+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T09:40:40.844+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:40:40.844+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T09:40:40.854+0000] {logging_mixin.py:188} INFO - [2026-04-27T09:40:40.854+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T09:40:40.876+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.079 seconds
+[2026-04-27T10:00:09.302+0000] {processor.py:161} INFO - Started process (PID=81670) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:00:09.304+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:00:09.313+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:00:09.304+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:00:09.327+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:00:09.350+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:00:09.350+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:00:09.359+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:00:09.359+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:00:09.382+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.084 seconds
+[2026-04-27T10:01:08.241+0000] {processor.py:161} INFO - Started process (PID=81724) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:01:08.243+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:01:08.253+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:01:08.253+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:01:08.265+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:01:08.288+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:01:08.288+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:01:08.298+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:01:08.298+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:01:08.319+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.083 seconds
+[2026-04-27T10:01:57.623+0000] {processor.py:161} INFO - Started process (PID=81800) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:01:57.625+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:01:57.625+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:01:57.625+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:01:57.635+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:01:57.655+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:01:57.655+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:01:57.666+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:01:57.666+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:01:57.683+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.065 seconds
+[2026-04-27T10:02:46.458+0000] {processor.py:161} INFO - Started process (PID=81869) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:02:46.462+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:02:46.463+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:02:46.463+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:02:46.473+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:02:46.496+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:02:46.496+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:02:46.505+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:02:46.505+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:02:46.527+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.074 seconds
+[2026-04-27T10:03:45.542+0000] {processor.py:161} INFO - Started process (PID=81952) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:03:45.546+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:03:45.548+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:03:45.547+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:03:45.561+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:03:45.583+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:03:45.583+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:03:45.594+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:03:45.594+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:03:45.613+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.076 seconds
+[2026-04-27T10:04:41.539+0000] {processor.py:161} INFO - Started process (PID=82072) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:04:41.542+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:04:41.544+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:04:41.543+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:04:41.553+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:04:41.575+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:04:41.575+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:04:41.587+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:04:41.587+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:04:41.608+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.072 seconds
+[2026-04-27T10:05:40.464+0000] {processor.py:161} INFO - Started process (PID=82144) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:05:40.468+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:05:40.469+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:05:40.468+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:05:40.481+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:05:40.505+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:05:40.504+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:05:40.515+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:05:40.515+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:05:40.552+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.091 seconds
+[2026-04-27T10:06:40.950+0000] {processor.py:161} INFO - Started process (PID=82213) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:06:40.953+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:06:40.955+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:06:40.954+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:06:40.966+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:06:40.988+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:06:40.988+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:06:40.999+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:06:40.999+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:06:41.019+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.074 seconds
+[2026-04-27T10:07:38.139+0000] {processor.py:161} INFO - Started process (PID=82274) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:07:38.143+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:07:38.144+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:07:38.143+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:07:38.155+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:07:38.176+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:07:38.176+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:07:38.186+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:07:38.185+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:07:38.205+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.074 seconds
+[2026-04-27T10:08:34.792+0000] {processor.py:161} INFO - Started process (PID=82337) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:08:34.795+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:08:34.796+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:08:34.796+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:08:34.806+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:08:34.830+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:08:34.830+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:08:34.841+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:08:34.841+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:08:34.864+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.076 seconds
+[2026-04-27T10:09:27.562+0000] {processor.py:161} INFO - Started process (PID=82395) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:09:27.567+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:09:27.568+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:09:27.567+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:09:27.578+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:09:27.599+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:09:27.598+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:09:27.608+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:09:27.608+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:09:27.628+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.074 seconds
+[2026-04-27T10:10:21.847+0000] {processor.py:161} INFO - Started process (PID=82450) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:10:21.850+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:10:21.852+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:10:21.851+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:10:21.864+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:10:21.884+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:10:21.884+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:10:21.893+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:10:21.893+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:10:21.915+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.074 seconds
+[2026-04-27T10:11:18.963+0000] {processor.py:161} INFO - Started process (PID=82512) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:11:18.964+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:11:18.966+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:11:18.966+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:11:18.977+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:11:19.001+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:11:19.000+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:11:19.019+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:11:19.019+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:11:19.043+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.086 seconds
+[2026-04-27T10:12:11.328+0000] {processor.py:161} INFO - Started process (PID=82569) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:12:11.331+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:12:11.332+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:12:11.332+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:12:11.349+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:12:11.372+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:12:11.371+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:12:11.382+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:12:11.382+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:12:11.402+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.087 seconds
+[2026-04-27T10:13:07.939+0000] {processor.py:161} INFO - Started process (PID=82632) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:13:07.943+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:13:07.944+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:13:07.943+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:13:07.955+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:13:07.976+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:13:07.976+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:13:07.985+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:13:07.985+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:13:08.008+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.074 seconds
+[2026-04-27T10:14:54.945+0000] {processor.py:161} INFO - Started process (PID=82706) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:14:54.947+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:14:54.950+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:14:54.949+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:14:54.958+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:14:54.978+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:14:54.978+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:14:54.990+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:14:54.990+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:14:55.024+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.084 seconds
+[2026-04-27T10:15:46.951+0000] {processor.py:161} INFO - Started process (PID=82760) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:15:46.954+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:15:46.957+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:15:46.956+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:15:46.966+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:15:46.996+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:15:46.996+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:15:47.011+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:15:47.010+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:15:47.038+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.092 seconds
+[2026-04-27T10:16:35.813+0000] {processor.py:161} INFO - Started process (PID=82806) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:16:35.817+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:16:35.819+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:16:35.819+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:16:35.829+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:16:35.860+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:16:35.860+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:16:35.874+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:16:35.873+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:16:35.907+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.098 seconds
+[2026-04-27T10:17:20.953+0000] {processor.py:161} INFO - Started process (PID=82856) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:17:20.958+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:17:20.959+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:17:20.959+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:17:20.977+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:17:21.009+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:17:21.009+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:17:21.025+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:17:21.024+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:17:21.050+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.106 seconds
+[2026-04-27T10:18:14.003+0000] {processor.py:161} INFO - Started process (PID=82916) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:18:14.007+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:18:14.008+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:18:14.007+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:18:14.018+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:18:14.042+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:18:14.042+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:18:14.052+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:18:14.052+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:18:14.076+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.079 seconds
+[2026-04-27T10:19:12.532+0000] {processor.py:161} INFO - Started process (PID=82979) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:19:12.535+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:19:12.537+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:19:12.536+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:19:12.549+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:19:12.571+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:19:12.571+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:19:12.582+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:19:12.582+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:19:12.603+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.077 seconds
+[2026-04-27T10:20:05.635+0000] {processor.py:161} INFO - Started process (PID=83036) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:20:05.638+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:20:05.640+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:20:05.639+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:20:05.651+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:20:05.672+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:20:05.672+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:20:05.682+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:20:05.681+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:20:05.702+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.071 seconds
+[2026-04-27T10:21:04.800+0000] {processor.py:161} INFO - Started process (PID=83116) to work on /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:21:04.833+0000] {processor.py:830} INFO - Processing file /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-04-27T10:21:04.837+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:21:04.836+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:21:04.856+0000] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-04-27T10:21:04.879+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:21:04.879+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T10:21:04.891+0000] {logging_mixin.py:188} INFO - [2026-04-27T10:21:04.891+0000] {dag.py:3823} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-04-27T10:21:04.943+0000] {processor.py:183} INFO - Processing /home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.148 seconds

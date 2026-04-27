@@ -1,0 +1,21 @@
+Experiment 1: Airflow Task Behavior
+
+We executed a failing task to observe Airflow's internal behavior.
+
+Observations:
+
+1. Task starts in RUNNING state
+2. On failure, it transitions to UP_FOR_RETRY
+3. Airflow automatically retries the task
+4. Retry count increases (try_number)
+5. After maximum retries, task becomes FAILED
+
+Logs confirm:
+
+Retry attempt: 1
+Retry attempt: 2
+Retry attempt: 3
+Retry attempt: 4
+
+Conclusion:
+Airflow handles task failures by automatically retrying based on configured parameters.
