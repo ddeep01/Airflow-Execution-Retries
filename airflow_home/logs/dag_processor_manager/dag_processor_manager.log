@@ -17185,3 +17185,1037 @@ File Path                                                                     PI
 /home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.12s           2026-04-27T18:57:13
 ================================================================================
 [2026-04-27T18:57:52.894+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T12:49:23.531+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T12:49:23.534+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T12:49:23.535+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T12:49:23.535+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T12:49:23.540+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T12:49:24.343+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.71s           2026-04-28T12:49:24
+================================================================================
+[2026-04-28T12:49:55.379+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.41s           2026-04-28T12:49:55
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.51s           2026-04-28T12:49:25
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.44s           2026-04-28T12:49:27
+================================================================================
+[2026-04-28T12:50:27.278+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.92s           2026-04-28T12:50:27
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.41s           2026-04-28T12:49:56
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.31s           2026-04-28T12:49:58
+================================================================================
+[2026-04-28T12:50:58.238+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.82s           2026-04-28T12:50:58
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T12:50:28
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.71s           2026-04-28T12:50:30
+================================================================================
+[2026-04-28T12:51:29.444+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T12:51:29
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T12:50:59
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.31s           2026-04-28T12:51:00
+================================================================================
+[2026-04-28T12:51:59.867+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.10s           2026-04-28T12:51:59
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.22s           2026-04-28T12:51:30
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:51:31
+================================================================================
+[2026-04-28T12:52:30.553+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T12:52:30
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T12:52:01
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:52:01
+================================================================================
+[2026-04-28T12:53:00.967+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T12:53:00
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T12:52:31
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.10s           2026-04-28T12:52:32
+================================================================================
+[2026-04-28T12:53:31.738+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T12:53:31
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T12:53:02
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:53:02
+================================================================================
+[2026-04-28T12:54:02.286+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.24s           2026-04-28T12:54:02
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.32s           2026-04-28T12:53:33
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:53:33
+================================================================================
+[2026-04-28T12:54:23.550+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T12:54:23.562+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T12:54:32.865+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T12:54:32
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.25s           2026-04-28T12:54:03
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:54:04
+================================================================================
+[2026-04-28T12:55:03.257+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.11s           2026-04-28T12:55:03
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.32s           2026-04-28T12:54:34
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:54:34
+================================================================================
+[2026-04-28T12:55:33.660+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.11s           2026-04-28T12:55:25
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T12:55:04
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:55:05
+================================================================================
+[2026-04-28T12:56:04.162+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T12:55:55
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T12:55:34
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.11s           2026-04-28T12:55:35
+================================================================================
+[2026-04-28T12:56:34.703+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T12:56:26
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.11s           2026-04-28T12:56:05
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:56:06
+================================================================================
+[2026-04-28T12:56:53.368+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T12:57:04.589+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T12:57:04.592+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T12:57:04.594+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T12:57:04.595+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T12:57:04.598+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T12:57:04.864+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.20s           2026-04-28T12:57:04
+================================================================================
+[2026-04-28T12:57:35.570+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.42s           2026-04-28T12:57:35
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T12:57:06
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:57:07
+================================================================================
+[2026-04-28T12:57:59.963+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T12:58:07.485+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T12:58:07.487+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T12:58:07.488+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T12:58:07.489+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T12:58:07.492+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T12:58:07.759+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T12:58:07
+================================================================================
+[2026-04-28T12:58:39.324+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.51s           2026-04-28T12:58:39
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T12:58:09
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:58:10
+================================================================================
+[2026-04-28T12:59:11.146+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T12:59:11
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.40s           2026-04-28T12:58:40
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.41s           2026-04-28T12:58:42
+================================================================================
+[2026-04-28T12:59:42.495+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T12:59:42
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.31s           2026-04-28T12:59:12
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T12:59:13
+================================================================================
+[2026-04-28T13:00:12.762+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:00:12
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.31s           2026-04-28T12:59:43
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.31s           2026-04-28T12:59:45
+================================================================================
+[2026-04-28T13:00:43.161+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:00:43
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T13:00:15
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:00:16
+================================================================================
+[2026-04-28T13:01:13.400+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.11s           2026-04-28T13:01:13
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T13:00:45
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:00:46
+================================================================================
+[2026-04-28T13:01:56.338+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:01:56
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.11s           2026-04-28T13:01:16
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:01:17
+================================================================================
+[2026-04-28T13:02:27.487+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.11s           2026-04-28T13:02:27
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T13:01:57
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:01:58
+================================================================================
+[2026-04-28T13:02:57.952+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:02:57
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.11s           2026-04-28T13:02:28
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.11s           2026-04-28T13:02:29
+================================================================================
+[2026-04-28T13:03:07.511+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:03:07.516+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:03:23.000+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T13:03:47.979+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T13:03:47.982+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T13:03:47.982+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T13:03:47.983+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:03:47.988+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:03:48.353+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T13:03:48
+================================================================================
+[2026-04-28T13:04:01.471+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T13:04:08.067+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T13:04:08.067+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T13:04:08.068+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T13:04:08.068+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:04:08.072+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:04:08.431+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T13:04:08
+================================================================================
+[2026-04-28T13:04:47.699+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:04:47
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T13:04:09
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.31s           2026-04-28T13:04:11
+================================================================================
+[2026-04-28T13:05:18.083+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T13:05:18
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.20s           2026-04-28T13:04:48
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.31s           2026-04-28T13:04:50
+================================================================================
+[2026-04-28T13:05:48.708+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:05:48
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T13:05:19
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:05:20
+================================================================================
+[2026-04-28T13:06:19.156+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:06:19
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.32s           2026-04-28T13:05:50
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:05:51
+================================================================================
+[2026-04-28T13:06:49.805+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:06:49
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.11s           2026-04-28T13:06:20
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.11s           2026-04-28T13:06:22
+================================================================================
+[2026-04-28T13:07:20.407+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:07:20
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.11s           2026-04-28T13:06:50
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.11s           2026-04-28T13:06:53
+================================================================================
+[2026-04-28T13:07:51.115+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.14s           2026-04-28T13:07:51
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.11s           2026-04-28T13:07:21
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.11s           2026-04-28T13:07:23
+================================================================================
+[2026-04-28T13:08:21.781+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.12s           2026-04-28T13:08:21
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.15s           2026-04-28T13:07:52
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.19s           2026-04-28T13:07:54
+================================================================================
+[2026-04-28T13:08:52.303+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.12s           2026-04-28T13:08:52
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.31s           2026-04-28T13:08:23
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.11s           2026-04-28T13:08:25
+================================================================================
+[2026-04-28T13:09:08.572+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:09:08.583+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:09:22.393+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T13:08:54
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.11s           2026-04-28T13:08:53
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:08:56
+================================================================================
+[2026-04-28T13:09:52.537+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.10s           2026-04-28T13:09:25
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T13:09:23
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.11s           2026-04-28T13:09:26
+================================================================================
+[2026-04-28T13:10:04.763+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T13:10:14.634+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T13:10:14.635+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T13:10:14.635+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T13:10:14.636+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:10:14.639+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:10:14.994+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.30s           2026-04-28T13:10:14
+================================================================================
+[2026-04-28T13:10:52.858+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T13:10:52
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.41s           2026-04-28T13:10:16
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:10:17
+================================================================================
+[2026-04-28T13:11:23.970+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T13:11:23
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.20s           2026-04-28T13:11:01
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:11:02
+================================================================================
+[2026-04-28T13:11:54.223+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:11:54
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T13:11:31
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:11:32
+================================================================================
+[2026-04-28T13:12:25.008+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.10s           2026-04-28T13:12:25
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.11s           2026-04-28T13:12:01
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.21s           2026-04-28T13:12:03
+================================================================================
+[2026-04-28T13:12:34.357+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T13:13:16.831+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T13:13:16.833+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T13:13:16.834+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T13:13:16.834+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:13:16.837+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:13:17.096+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.20s           2026-04-28T13:13:17
+================================================================================
+[2026-04-28T13:13:54.917+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.21s           2026-04-28T13:13:54
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T13:13:18
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.31s           2026-04-28T13:13:19
+================================================================================
+[2026-04-28T13:14:25.362+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T13:14:25
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.21s           2026-04-28T13:14:02
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.20s           2026-04-28T13:14:11
+================================================================================
+[2026-04-28T13:14:55.974+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py                           1           0  0.31s           2026-04-28T13:14:55
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                               1           0  0.31s           2026-04-28T13:14:33
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                     1           0  0.31s           2026-04-28T13:14:41
+================================================================================
+[2026-04-28T13:15:24.192+0000] {manager.py:1129} WARNING - Skipping processing of missing file: /home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_execution.py
+[2026-04-28T13:15:26.082+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.11s           2026-04-28T13:15:03
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.21s           2026-04-28T13:15:11
+================================================================================
+[2026-04-28T13:15:56.196+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.22s           2026-04-28T13:15:34
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.10s           2026-04-28T13:15:42
+================================================================================
+[2026-04-28T13:16:26.299+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.21s           2026-04-28T13:16:04
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.11s           2026-04-28T13:16:12
+================================================================================
+[2026-04-28T13:16:56.930+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.22s           2026-04-28T13:16:35
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.22s           2026-04-28T13:16:43
+================================================================================
+[2026-04-28T13:17:27.019+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.21s           2026-04-28T13:17:06
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.12s           2026-04-28T13:17:14
+================================================================================
+[2026-04-28T13:17:57.127+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.11s           2026-04-28T13:17:36
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.31s           2026-04-28T13:17:44
+================================================================================
+[2026-04-28T13:18:17.111+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:18:17.130+0000] {manager.py:741} INFO - There are 2 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:18:27.210+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.13s           2026-04-28T13:18:07
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.12s           2026-04-28T13:18:15
+================================================================================
+[2026-04-28T13:18:57.362+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.21s           2026-04-28T13:18:37
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.31s           2026-04-28T13:18:45
+================================================================================
+[2026-04-28T13:19:27.437+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.22s           2026-04-28T13:19:08
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.21s           2026-04-28T13:19:16
+================================================================================
+[2026-04-28T13:19:57.540+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.21s           2026-04-28T13:19:38
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.12s           2026-04-28T13:19:46
+================================================================================
+[2026-04-28T13:20:27.626+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.71s           2026-04-28T13:20:09
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.23s           2026-04-28T13:20:17
+================================================================================
+[2026-04-28T13:20:57.706+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.12s           2026-04-28T13:20:40
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.11s           2026-04-28T13:20:47
+================================================================================
+[2026-04-28T13:21:27.783+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.22s           2026-04-28T13:21:11
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.21s           2026-04-28T13:21:18
+================================================================================
+[2026-04-28T13:21:58.407+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.21s           2026-04-28T13:21:42
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.21s           2026-04-28T13:21:48
+================================================================================
+[2026-04-28T13:22:29.110+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.10s           2026-04-28T13:22:13
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.11s           2026-04-28T13:22:18
+================================================================================
+[2026-04-28T13:22:59.226+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.21s           2026-04-28T13:22:43
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.12s           2026-04-28T13:22:49
+================================================================================
+[2026-04-28T13:23:18.046+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:23:18.051+0000] {manager.py:741} INFO - There are 2 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:23:29.824+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                           1           0  0.11s           2026-04-28T13:23:14
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                 1           0  0.11s           2026-04-28T13:23:20
+================================================================================
+[2026-04-28T13:23:47.109+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T13:23:57.145+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T13:23:57.147+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T13:23:57.148+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T13:23:57.148+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:23:57.156+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:23:57.627+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.41s           2026-04-28T13:23:57
+================================================================================
+[2026-04-28T13:24:18.343+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T13:28:36.180+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T13:28:36.182+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T13:28:36.183+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T13:28:36.183+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:28:36.192+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:28:36.564+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.31s           2026-04-28T13:28:36
+================================================================================
+[2026-04-28T13:28:37.864+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T13:31:29.325+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T13:31:29.328+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T13:31:29.328+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T13:31:29.329+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:31:29.335+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:31:29.722+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.31s           2026-04-28T13:31:29
+================================================================================
+[2026-04-28T13:32:01.258+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.31s           2026-04-28T13:31:37
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.51s           2026-04-28T13:31:39
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:32:01
+================================================================================
+[2026-04-28T13:32:31.768+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.31s           2026-04-28T13:32:08
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.31s           2026-04-28T13:32:09
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.41s           2026-04-28T13:32:31
+================================================================================
+[2026-04-28T13:33:02.448+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.31s           2026-04-28T13:32:39
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.21s           2026-04-28T13:32:40
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.31s           2026-04-28T13:33:02
+================================================================================
+[2026-04-28T13:33:33.167+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.11s           2026-04-28T13:33:09
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.53s           2026-04-28T13:33:11
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:33:33
+================================================================================
+[2026-04-28T13:34:03.988+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.21s           2026-04-28T13:33:40
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.11s           2026-04-28T13:33:41
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:34:03
+================================================================================
+[2026-04-28T13:34:34.566+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.31s           2026-04-28T13:34:11
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.21s           2026-04-28T13:34:12
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:34:34
+================================================================================
+[2026-04-28T13:35:05.047+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.21s           2026-04-28T13:34:41
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.22s           2026-04-28T13:34:42
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.22s           2026-04-28T13:35:05
+================================================================================
+[2026-04-28T13:35:28.731+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T13:35:36.687+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T13:35:36.688+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T13:35:36.689+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T13:35:36.690+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:35:36.702+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:35:37.109+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.31s           2026-04-28T13:35:37
+================================================================================
+[2026-04-28T13:35:43.347+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T13:35:53.610+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T13:35:53.612+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T13:35:53.613+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T13:35:53.614+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:35:53.617+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:35:54.058+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.31s           2026-04-28T13:35:54
+================================================================================
+[2026-04-28T13:36:25.839+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.21s           2026-04-28T13:35:55
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.21s           2026-04-28T13:35:56
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.31s           2026-04-28T13:36:25
+================================================================================
+[2026-04-28T13:36:57.159+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.21s           2026-04-28T13:36:28
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.21s           2026-04-28T13:36:29
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.31s           2026-04-28T13:36:57
+================================================================================
+[2026-04-28T13:37:28.121+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.41s           2026-04-28T13:36:59
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.30s           2026-04-28T13:37:00
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:37:28
+================================================================================
+[2026-04-28T13:37:58.432+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.11s           2026-04-28T13:37:30
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.11s           2026-04-28T13:37:31
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:37:58
+================================================================================
+[2026-04-28T13:38:29.094+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.21s           2026-04-28T13:38:01
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.42s           2026-04-28T13:38:02
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:38:28
+================================================================================
+[2026-04-28T13:38:59.781+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.31s           2026-04-28T13:38:32
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.23s           2026-04-28T13:38:33
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.54s           2026-04-28T13:38:59
+================================================================================
+[2026-04-28T13:39:19.358+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-04-28T13:39:26.878+0000] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2026-04-28T13:39:26.881+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-04-28T13:39:26.881+0000] {manager.py:471} INFO - Checking for new files in /home/dell/Airflow-Execution-Retries/airflow_home/dags every 300 seconds
+[2026-04-28T13:39:26.882+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:39:26.885+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:39:27.217+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      0           0
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:39:27
+================================================================================
+[2026-04-28T13:39:59.008+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.21s           2026-04-28T13:39:59
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.77s           2026-04-28T13:39:30
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:39:57
+================================================================================
+[2026-04-28T13:40:29.757+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.31s           2026-04-28T13:40:29
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.21s           2026-04-28T13:40:01
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.31s           2026-04-28T13:40:28
+================================================================================
+[2026-04-28T13:41:00.744+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.11s           2026-04-28T13:41:00
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.31s           2026-04-28T13:40:32
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.31s           2026-04-28T13:40:59
+================================================================================
+[2026-04-28T13:41:31.781+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.12s           2026-04-28T13:41:31
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.21s           2026-04-28T13:41:03
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.11s           2026-04-28T13:41:29
+================================================================================
+[2026-04-28T13:42:02.589+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.11s           2026-04-28T13:42:02
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.21s           2026-04-28T13:41:34
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:42:00
+================================================================================
+[2026-04-28T13:42:32.922+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.21s           2026-04-28T13:42:32
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.73s           2026-04-28T13:42:05
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:42:30
+================================================================================
+[2026-04-28T13:43:04.029+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.42s           2026-04-28T13:43:04
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.22s           2026-04-28T13:42:36
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.11s           2026-04-28T13:43:00
+================================================================================
+[2026-04-28T13:43:34.389+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.21s           2026-04-28T13:43:34
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.21s           2026-04-28T13:43:07
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.25s           2026-04-28T13:43:31
+================================================================================
+[2026-04-28T13:44:04.906+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.33s           2026-04-28T13:44:04
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.22s           2026-04-28T13:43:37
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:44:01
+================================================================================
+[2026-04-28T13:44:27.245+0000] {manager.py:738} INFO - Searching for files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:44:27.254+0000] {manager.py:741} INFO - There are 3 files in /home/dell/Airflow-Execution-Retries/airflow_home/dags
+[2026-04-28T13:44:35.156+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.11s           2026-04-28T13:44:35
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.12s           2026-04-28T13:44:08
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.12s           2026-04-28T13:44:32
+================================================================================
+[2026-04-28T13:45:06.057+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_priority_retry.py                                1           0  0.21s           2026-04-28T13:45:06
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp1_default.py                                      1           0  0.21s           2026-04-28T13:44:38
+/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py                           1           0  0.21s           2026-04-28T13:45:03
+================================================================================
+[2026-04-28T13:45:16.738+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
