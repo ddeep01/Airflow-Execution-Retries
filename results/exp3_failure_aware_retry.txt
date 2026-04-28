@@ -1,0 +1,81 @@
+Experiment 3: Failure-Aware Retry Mechanism in Airflow
+
+Objective
+
+Implement intelligent retry logic where:
+
+Network errors → retry
+Logic errors → fail immediately
+
+
+Implementation
+
+We modified task logic using Airflow exceptions:
+
+AirflowException → triggers retry
+AirflowFailException → skips retry
+
+Error classification:
+
+"connection" → retry
+Other errors → no retry
+
+
+Observations (from logs)
+
+Logic Error (No Retry)
+
+Task failed immediately after first attempt
+No retry was triggered
+
+From logs:
+
+RETRY DECISION: Logic error → NO RETRY
+Immediate failure requested. Marking task as FAILED
+
+Behavior:
+
+Attempt count = 1
+Retry skipped completely
+
+
+Network Error (Retry Enabled)
+
+Task retried multiple times (as configured)
+
+From logs:
+
+RETRY DECISION: Network error → RETRY
+Marking task as UP_FOR_RETRY
+
+Observed retry timings:
+
+Attempt 1 → 13:39:54
+Attempt 2 → 13:40:07 (~13 sec delay)
+Attempt 3 → 13:40:19 (~12 sec delay)
+
+Behavior:
+
+Total attempts = 3 (1 initial + 2 retries)
+Retry delay ≈ 12–13 seconds
+
+
+Note on Timing Variations
+
+Actual retry delays (~12–13 sec) differ slightly from configured delay (10 sec) due to:
+
+Scheduler heartbeat latency
+Task queueing delay
+Worker execution overhead
+
+
+Key Insight
+
+Airflow retries are not just configuration-driven — they can be controlled dynamically using exception types.
+
+
+Conclusion
+
+Logic errors → fail fast (no retry)
+Network errors → retry automatically
+System avoids unnecessary retries and improves efficiency

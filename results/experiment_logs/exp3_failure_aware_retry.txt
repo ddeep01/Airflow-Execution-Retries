@@ -1,0 +1,169 @@
+Logical Error Log
+
+Deep.localdomain
+*** Found local files:
+***   * /home/dell/Airflow-Execution-Retries/airflow_home/logs/dag_id=exp_failure_smart_retry/run_id=manual__2026-04-28T13:39:50.821410+00:00/task_id=logic_task/attempt=1.log
+[2026-04-28, 13:39:56 UTC] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_failure_smart_retry.logic_task manual__2026-04-28T13:39:50.821410+00:00 [queued]>
+[2026-04-28, 13:39:56 UTC] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_failure_smart_retry.logic_task manual__2026-04-28T13:39:50.821410+00:00 [queued]>
+[2026-04-28, 13:39:56 UTC] {taskinstance.py:2163} INFO - Starting attempt 1 of 3
+[2026-04-28, 13:39:56 UTC] {taskinstance.py:2184} INFO - Executing <Task(PythonOperator): logic_task> on 2026-04-28 13:39:50.821410+00:00
+[2026-04-28, 13:39:56 UTC] {standard_task_runner.py:60} INFO - Started process 31439 to run task
+[2026-04-28, 13:39:56 UTC] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'exp_failure_smart_retry', 'logic_task', 'manual__2026-04-28T13:39:50.821410+00:00', '--job-id', '191', '--raw', '--subdir', 'DAGS_FOLDER/exp_failure_aware_retry.py', '--cfg-path', '/tmp/tmpprfwtz2i']
+[2026-04-28, 13:39:56 UTC] {standard_task_runner.py:88} INFO - Job 191: Subtask logic_task
+[2026-04-28, 13:39:56 UTC] {task_command.py:423} INFO - Running <TaskInstance: exp_failure_smart_retry.logic_task manual__2026-04-28T13:39:50.821410+00:00 [running]> on host Deep.localdomain
+[2026-04-28, 13:39:56 UTC] {taskinstance.py:2473} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='deep' AIRFLOW_CTX_DAG_ID='exp_failure_smart_retry' AIRFLOW_CTX_TASK_ID='logic_task' AIRFLOW_CTX_EXECUTION_DATE='2026-04-28T13:39:50.821410+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-28T13:39:50.821410+00:00'
+[2026-04-28, 13:39:56 UTC] {logging_mixin.py:188} INFO - 
+========== 🚀 TASK START ==========
+[2026-04-28, 13:39:56 UTC] {logging_mixin.py:188} INFO - Simulating LOGIC error...
+[2026-04-28, 13:39:56 UTC] {logging_mixin.py:188} INFO - ❌ ERROR OCCURRED: Invalid calculation logic
+[2026-04-28, 13:39:56 UTC] {logging_mixin.py:188} INFO - 🚫 RETRY DECISION: Logic error → NO RETRY
+[2026-04-28, 13:39:56 UTC] {logging_mixin.py:188} INFO - [DEBUG] Retry attempt: 1 for task logic_task
+[2026-04-28, 13:39:56 UTC] {taskinstance.py:2691} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py", line 30, in logic_error
+    raise Exception("Invalid calculation logic")
+Exception: Invalid calculation logic
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py", line 40, in logic_error
+    raise AirflowFailException("Do not retry")
+airflow.exceptions.AirflowFailException: Do not retry
+[2026-04-28, 13:39:56 UTC] {logging_mixin.py:188} INFO - [DEBUG] Retry attempt: 1 for task logic_task
+[2026-04-28, 13:39:56 UTC] {taskinstance.py:1139} INFO - Immediate failure requested. Marking task as FAILED. dag_id=exp_failure_smart_retry, task_id=logic_task, execution_date=20260428T133950, start_date=20260428T133956, end_date=20260428T133956
+[2026-04-28, 13:39:56 UTC] {standard_task_runner.py:107} ERROR - Failed to execute job 191 for task logic_task (Do not retry; 31439)
+[2026-04-28, 13:39:56 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-28, 13:39:56 UTC] {taskinstance.py:3297} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
+
+Network Error Log
+
+
+Deep.localdomain
+*** Found local files:
+***   * /home/dell/Airflow-Execution-Retries/airflow_home/logs/dag_id=exp_failure_smart_retry/run_id=manual__2026-04-28T13:39:50.821410+00:00/task_id=network_task/attempt=1.log
+[2026-04-28, 13:39:54 UTC] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_failure_smart_retry.network_task manual__2026-04-28T13:39:50.821410+00:00 [queued]>
+[2026-04-28, 13:39:54 UTC] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_failure_smart_retry.network_task manual__2026-04-28T13:39:50.821410+00:00 [queued]>
+[2026-04-28, 13:39:54 UTC] {taskinstance.py:2163} INFO - Starting attempt 1 of 3
+[2026-04-28, 13:39:54 UTC] {taskinstance.py:2184} INFO - Executing <Task(PythonOperator): network_task> on 2026-04-28 13:39:50.821410+00:00
+[2026-04-28, 13:39:54 UTC] {standard_task_runner.py:60} INFO - Started process 31437 to run task
+[2026-04-28, 13:39:54 UTC] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'exp_failure_smart_retry', 'network_task', 'manual__2026-04-28T13:39:50.821410+00:00', '--job-id', '190', '--raw', '--subdir', 'DAGS_FOLDER/exp_failure_aware_retry.py', '--cfg-path', '/tmp/tmpbog9m9tj']
+[2026-04-28, 13:39:54 UTC] {standard_task_runner.py:88} INFO - Job 190: Subtask network_task
+[2026-04-28, 13:39:54 UTC] {task_command.py:423} INFO - Running <TaskInstance: exp_failure_smart_retry.network_task manual__2026-04-28T13:39:50.821410+00:00 [running]> on host Deep.localdomain
+[2026-04-28, 13:39:54 UTC] {taskinstance.py:2473} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='deep' AIRFLOW_CTX_DAG_ID='exp_failure_smart_retry' AIRFLOW_CTX_TASK_ID='network_task' AIRFLOW_CTX_EXECUTION_DATE='2026-04-28T13:39:50.821410+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-28T13:39:50.821410+00:00'
+[2026-04-28, 13:39:54 UTC] {logging_mixin.py:188} INFO - 
+========== 🚀 TASK START ==========
+[2026-04-28, 13:39:54 UTC] {logging_mixin.py:188} INFO - Simulating NETWORK error...
+[2026-04-28, 13:39:54 UTC] {logging_mixin.py:188} INFO - ❌ ERROR OCCURRED: Connection timeout error
+[2026-04-28, 13:39:54 UTC] {logging_mixin.py:188} INFO - 🔄 RETRY DECISION: Network error → RETRY
+[2026-04-28, 13:39:54 UTC] {logging_mixin.py:188} INFO - [DEBUG] Retry attempt: 1 for task network_task
+[2026-04-28, 13:39:54 UTC] {taskinstance.py:2691} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py", line 12, in network_error
+    raise Exception("Connection timeout error")
+Exception: Connection timeout error
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py", line 19, in network_error
+    raise AirflowException("Retrying due to network issue")
+airflow.exceptions.AirflowException: Retrying due to network issue
+[2026-04-28, 13:39:54 UTC] {logging_mixin.py:188} INFO - [DEBUG] Retry attempt: 1 for task network_task
+[2026-04-28, 13:39:54 UTC] {taskinstance.py:2768} INFO - [PRIORITY RETRY ACTIVE] Task=network_task | Priority=1 (LOW) | Delay=10.0s
+[2026-04-28, 13:39:54 UTC] {taskinstance.py:1139} INFO - Marking task as UP_FOR_RETRY. dag_id=exp_failure_smart_retry, task_id=network_task, execution_date=20260428T133950, start_date=20260428T133954, end_date=20260428T133954
+[2026-04-28, 13:39:54 UTC] {standard_task_runner.py:107} ERROR - Failed to execute job 190 for task network_task (Retrying due to network issue; 31437)
+[2026-04-28, 13:39:54 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-28, 13:39:54 UTC] {taskinstance.py:3297} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
+
+Deep.localdomain
+*** Found local files:
+***   * /home/dell/Airflow-Execution-Retries/airflow_home/logs/dag_id=exp_failure_smart_retry/run_id=manual__2026-04-28T13:39:50.821410+00:00/task_id=network_task/attempt=2.log
+[2026-04-28, 13:40:07 UTC] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_failure_smart_retry.network_task manual__2026-04-28T13:39:50.821410+00:00 [queued]>
+[2026-04-28, 13:40:07 UTC] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_failure_smart_retry.network_task manual__2026-04-28T13:39:50.821410+00:00 [queued]>
+[2026-04-28, 13:40:07 UTC] {taskinstance.py:2163} INFO - Starting attempt 2 of 3
+[2026-04-28, 13:40:07 UTC] {taskinstance.py:2184} INFO - Executing <Task(PythonOperator): network_task> on 2026-04-28 13:39:50.821410+00:00
+[2026-04-28, 13:40:07 UTC] {standard_task_runner.py:60} INFO - Started process 31447 to run task
+[2026-04-28, 13:40:07 UTC] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'exp_failure_smart_retry', 'network_task', 'manual__2026-04-28T13:39:50.821410+00:00', '--job-id', '192', '--raw', '--subdir', 'DAGS_FOLDER/exp_failure_aware_retry.py', '--cfg-path', '/tmp/tmpcz3n6u53']
+[2026-04-28, 13:40:07 UTC] {standard_task_runner.py:88} INFO - Job 192: Subtask network_task
+[2026-04-28, 13:40:07 UTC] {task_command.py:423} INFO - Running <TaskInstance: exp_failure_smart_retry.network_task manual__2026-04-28T13:39:50.821410+00:00 [running]> on host Deep.localdomain
+[2026-04-28, 13:40:07 UTC] {taskinstance.py:2473} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='deep' AIRFLOW_CTX_DAG_ID='exp_failure_smart_retry' AIRFLOW_CTX_TASK_ID='network_task' AIRFLOW_CTX_EXECUTION_DATE='2026-04-28T13:39:50.821410+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-28T13:39:50.821410+00:00'
+[2026-04-28, 13:40:07 UTC] {logging_mixin.py:188} INFO - 
+========== 🚀 TASK START ==========
+[2026-04-28, 13:40:07 UTC] {logging_mixin.py:188} INFO - Simulating NETWORK error...
+[2026-04-28, 13:40:07 UTC] {logging_mixin.py:188} INFO - ❌ ERROR OCCURRED: Connection timeout error
+[2026-04-28, 13:40:07 UTC] {logging_mixin.py:188} INFO - 🔄 RETRY DECISION: Network error → RETRY
+[2026-04-28, 13:40:07 UTC] {logging_mixin.py:188} INFO - [DEBUG] Retry attempt: 2 for task network_task
+[2026-04-28, 13:40:07 UTC] {taskinstance.py:2691} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py", line 12, in network_error
+    raise Exception("Connection timeout error")
+Exception: Connection timeout error
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py", line 19, in network_error
+    raise AirflowException("Retrying due to network issue")
+airflow.exceptions.AirflowException: Retrying due to network issue
+[2026-04-28, 13:40:07 UTC] {logging_mixin.py:188} INFO - [DEBUG] Retry attempt: 2 for task network_task
+[2026-04-28, 13:40:07 UTC] {taskinstance.py:2768} INFO - [PRIORITY RETRY ACTIVE] Task=network_task | Priority=1 (LOW) | Delay=10.0s
+[2026-04-28, 13:40:07 UTC] {taskinstance.py:1139} INFO - Marking task as UP_FOR_RETRY. dag_id=exp_failure_smart_retry, task_id=network_task, execution_date=20260428T133950, start_date=20260428T134007, end_date=20260428T134007
+[2026-04-28, 13:40:07 UTC] {standard_task_runner.py:107} ERROR - Failed to execute job 192 for task network_task (Retrying due to network issue; 31447)
+[2026-04-28, 13:40:07 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-28, 13:40:07 UTC] {taskinstance.py:3297} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
+
+Deep.localdomain
+*** Found local files:
+***   * /home/dell/Airflow-Execution-Retries/airflow_home/logs/dag_id=exp_failure_smart_retry/run_id=manual__2026-04-28T13:39:50.821410+00:00/task_id=network_task/attempt=3.log
+[2026-04-28, 13:40:19 UTC] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_failure_smart_retry.network_task manual__2026-04-28T13:39:50.821410+00:00 [queued]>
+[2026-04-28, 13:40:19 UTC] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_failure_smart_retry.network_task manual__2026-04-28T13:39:50.821410+00:00 [queued]>
+[2026-04-28, 13:40:19 UTC] {taskinstance.py:2163} INFO - Starting attempt 3 of 3
+[2026-04-28, 13:40:19 UTC] {taskinstance.py:2184} INFO - Executing <Task(PythonOperator): network_task> on 2026-04-28 13:39:50.821410+00:00
+[2026-04-28, 13:40:19 UTC] {standard_task_runner.py:60} INFO - Started process 31451 to run task
+[2026-04-28, 13:40:19 UTC] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'exp_failure_smart_retry', 'network_task', 'manual__2026-04-28T13:39:50.821410+00:00', '--job-id', '193', '--raw', '--subdir', 'DAGS_FOLDER/exp_failure_aware_retry.py', '--cfg-path', '/tmp/tmpkak1620i']
+[2026-04-28, 13:40:19 UTC] {standard_task_runner.py:88} INFO - Job 193: Subtask network_task
+[2026-04-28, 13:40:19 UTC] {task_command.py:423} INFO - Running <TaskInstance: exp_failure_smart_retry.network_task manual__2026-04-28T13:39:50.821410+00:00 [running]> on host Deep.localdomain
+[2026-04-28, 13:40:19 UTC] {taskinstance.py:2473} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='deep' AIRFLOW_CTX_DAG_ID='exp_failure_smart_retry' AIRFLOW_CTX_TASK_ID='network_task' AIRFLOW_CTX_EXECUTION_DATE='2026-04-28T13:39:50.821410+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-28T13:39:50.821410+00:00'
+[2026-04-28, 13:40:19 UTC] {logging_mixin.py:188} INFO - 
+========== 🚀 TASK START ==========
+[2026-04-28, 13:40:19 UTC] {logging_mixin.py:188} INFO - Simulating NETWORK error...
+[2026-04-28, 13:40:19 UTC] {logging_mixin.py:188} INFO - ❌ ERROR OCCURRED: Connection timeout error
+[2026-04-28, 13:40:19 UTC] {logging_mixin.py:188} INFO - 🔄 RETRY DECISION: Network error → RETRY
+[2026-04-28, 13:40:19 UTC] {logging_mixin.py:188} INFO - [DEBUG] Retry attempt: 3 for task network_task
+[2026-04-28, 13:40:19 UTC] {taskinstance.py:2691} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py", line 12, in network_error
+    raise Exception("Connection timeout error")
+Exception: Connection timeout error
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/dell/Airflow-Execution-Retries/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/dell/Airflow-Execution-Retries/airflow_home/dags/exp_failure_aware_retry.py", line 19, in network_error
+    raise AirflowException("Retrying due to network issue")
+airflow.exceptions.AirflowException: Retrying due to network issue
+[2026-04-28, 13:40:19 UTC] {logging_mixin.py:188} INFO - [DEBUG] Retry attempt: 3 for task network_task
+[2026-04-28, 13:40:19 UTC] {taskinstance.py:1139} INFO - Marking task as FAILED. dag_id=exp_failure_smart_retry, task_id=network_task, execution_date=20260428T133950, start_date=20260428T134019, end_date=20260428T134019
+[2026-04-28, 13:40:19 UTC] {standard_task_runner.py:107} ERROR - Failed to execute job 193 for task network_task (Retrying due to network issue; 31451)
+[2026-04-28, 13:40:19 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-28, 13:40:19 UTC] {taskinstance.py:3297} INFO - 0 downstream tasks scheduled from follow-on schedule check
