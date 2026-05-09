@@ -1,0 +1,142 @@
+Experiment 4 :-
+
+---> SequentialExecutor
+
+Deep.localdomain
+*** Found local files:
+***   * /home/dell/Airflow-Execution-Retries/airflow_home/logs/dag_id=exp_sequential_vs_parallel_execution/run_id=manual__2026-05-09T12:38:29.103686+00:00/task_id=task_1/attempt=1.log
+[2026-05-09, 12:38:31 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_1 manual__2026-05-09T12:38:29.103686+00:00 [queued]>
+[2026-05-09, 12:38:31 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_1 manual__2026-05-09T12:38:29.103686+00:00 [queued]>
+[2026-05-09, 12:38:31 UTC] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-05-09, 12:38:31 UTC] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): task_1> on 2026-05-09 12:38:29.103686+00:00
+[2026-05-09, 12:38:31 UTC] {standard_task_runner.py:60} INFO - Started process 110094 to run task
+[2026-05-09, 12:38:31 UTC] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'exp_sequential_vs_parallel_execution', 'task_1', 'manual__2026-05-09T12:38:29.103686+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/exp_sequential_vs_parallel_execution.py', '--cfg-path', '/tmp/tmpxvfvef20']
+[2026-05-09, 12:38:31 UTC] {standard_task_runner.py:88} INFO - Job 29: Subtask task_1
+[2026-05-09, 12:38:32 UTC] {task_command.py:423} INFO - Running <TaskInstance: exp_sequential_vs_parallel_execution.task_1 manual__2026-05-09T12:38:29.103686+00:00 [running]> on host Deep.localdomain
+[2026-05-09, 12:38:32 UTC] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='exp_sequential_vs_parallel_execution' AIRFLOW_CTX_TASK_ID='task_1' AIRFLOW_CTX_EXECUTION_DATE='2026-05-09T12:38:29.103686+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-09T12:38:29.103686+00:00'
+[2026-05-09, 12:38:32 UTC] {logging_mixin.py:188} INFO - STARTING: task_1
+[2026-05-09, 12:38:32 UTC] {logging_mixin.py:188} INFO - START TIME: 1778330312.1673036
+[2026-05-09, 12:38:37 UTC] {logging_mixin.py:188} INFO - FINISHED: task_1
+[2026-05-09, 12:38:37 UTC] {logging_mixin.py:188} INFO - END TIME: 1778330317.1722524
+[2026-05-09, 12:38:37 UTC] {logging_mixin.py:188} INFO - TOTAL TASK TIME: 5.004948854446411
+[2026-05-09, 12:38:37 UTC] {python.py:201} INFO - Done. Returned value was: None
+[2026-05-09, 12:38:37 UTC] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=exp_sequential_vs_parallel_execution, task_id=task_1, execution_date=20260509T123829, start_date=20260509T123831, end_date=20260509T123837
+[2026-05-09, 12:38:37 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-05-09, 12:38:37 UTC] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
+
+Deep.localdomain
+*** Found local files:
+***   * /home/dell/Airflow-Execution-Retries/airflow_home/logs/dag_id=exp_sequential_vs_parallel_execution/run_id=manual__2026-05-09T12:38:29.103686+00:00/task_id=task_2/attempt=1.log
+[2026-05-09, 12:38:43 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_2 manual__2026-05-09T12:38:29.103686+00:00 [queued]>
+[2026-05-09, 12:38:43 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_2 manual__2026-05-09T12:38:29.103686+00:00 [queued]>
+[2026-05-09, 12:38:43 UTC] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-05-09, 12:38:43 UTC] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): task_2> on 2026-05-09 12:38:29.103686+00:00
+[2026-05-09, 12:38:43 UTC] {standard_task_runner.py:60} INFO - Started process 110859 to run task
+[2026-05-09, 12:38:43 UTC] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'exp_sequential_vs_parallel_execution', 'task_2', 'manual__2026-05-09T12:38:29.103686+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/exp_sequential_vs_parallel_execution.py', '--cfg-path', '/tmp/tmpogh3y6bl']
+[2026-05-09, 12:38:43 UTC] {standard_task_runner.py:88} INFO - Job 30: Subtask task_2
+[2026-05-09, 12:38:44 UTC] {task_command.py:423} INFO - Running <TaskInstance: exp_sequential_vs_parallel_execution.task_2 manual__2026-05-09T12:38:29.103686+00:00 [running]> on host Deep.localdomain
+[2026-05-09, 12:38:44 UTC] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='exp_sequential_vs_parallel_execution' AIRFLOW_CTX_TASK_ID='task_2' AIRFLOW_CTX_EXECUTION_DATE='2026-05-09T12:38:29.103686+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-09T12:38:29.103686+00:00'
+[2026-05-09, 12:38:44 UTC] {logging_mixin.py:188} INFO - STARTING: task_2
+[2026-05-09, 12:38:44 UTC] {logging_mixin.py:188} INFO - START TIME: 1778330324.3910632
+[2026-05-09, 12:38:49 UTC] {logging_mixin.py:188} INFO - FINISHED: task_2
+[2026-05-09, 12:38:49 UTC] {logging_mixin.py:188} INFO - END TIME: 1778330329.395776
+[2026-05-09, 12:38:49 UTC] {logging_mixin.py:188} INFO - TOTAL TASK TIME: 5.004712820053101
+[2026-05-09, 12:38:49 UTC] {python.py:201} INFO - Done. Returned value was: None
+[2026-05-09, 12:38:49 UTC] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=exp_sequential_vs_parallel_execution, task_id=task_2, execution_date=20260509T123829, start_date=20260509T123843, end_date=20260509T123849
+[2026-05-09, 12:38:49 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-05-09, 12:38:49 UTC] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
+
+Deep.localdomain
+*** Found local files:
+***   * /home/dell/Airflow-Execution-Retries/airflow_home/logs/dag_id=exp_sequential_vs_parallel_execution/run_id=manual__2026-05-09T12:38:29.103686+00:00/task_id=task_3/attempt=1.log
+[2026-05-09, 12:38:52 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_3 manual__2026-05-09T12:38:29.103686+00:00 [queued]>
+[2026-05-09, 12:38:52 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_3 manual__2026-05-09T12:38:29.103686+00:00 [queued]>
+[2026-05-09, 12:38:52 UTC] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-05-09, 12:38:52 UTC] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): task_3> on 2026-05-09 12:38:29.103686+00:00
+[2026-05-09, 12:38:52 UTC] {standard_task_runner.py:60} INFO - Started process 112347 to run task
+[2026-05-09, 12:38:52 UTC] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'exp_sequential_vs_parallel_execution', 'task_3', 'manual__2026-05-09T12:38:29.103686+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/exp_sequential_vs_parallel_execution.py', '--cfg-path', '/tmp/tmp272h84f8']
+[2026-05-09, 12:38:52 UTC] {standard_task_runner.py:88} INFO - Job 31: Subtask task_3
+[2026-05-09, 12:38:52 UTC] {task_command.py:423} INFO - Running <TaskInstance: exp_sequential_vs_parallel_execution.task_3 manual__2026-05-09T12:38:29.103686+00:00 [running]> on host Deep.localdomain
+[2026-05-09, 12:38:52 UTC] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='exp_sequential_vs_parallel_execution' AIRFLOW_CTX_TASK_ID='task_3' AIRFLOW_CTX_EXECUTION_DATE='2026-05-09T12:38:29.103686+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-09T12:38:29.103686+00:00'
+[2026-05-09, 12:38:52 UTC] {logging_mixin.py:188} INFO - STARTING: task_3
+[2026-05-09, 12:38:52 UTC] {logging_mixin.py:188} INFO - START TIME: 1778330332.6969562
+[2026-05-09, 12:38:57 UTC] {logging_mixin.py:188} INFO - FINISHED: task_3
+[2026-05-09, 12:38:57 UTC] {logging_mixin.py:188} INFO - END TIME: 1778330337.702732
+[2026-05-09, 12:38:57 UTC] {logging_mixin.py:188} INFO - TOTAL TASK TIME: 5.0057759284973145
+[2026-05-09, 12:38:57 UTC] {python.py:201} INFO - Done. Returned value was: None
+[2026-05-09, 12:38:57 UTC] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=exp_sequential_vs_parallel_execution, task_id=task_3, execution_date=20260509T123829, start_date=20260509T123852, end_date=20260509T123857
+[2026-05-09, 12:38:57 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-05-09, 12:38:57 UTC] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
+
+---> LocalExecutor
+
+Deep.localdomain
+*** Found local files:
+***   * /home/dell/Airflow-Execution-Retries/airflow_home/logs/dag_id=exp_sequential_vs_parallel_execution/run_id=manual__2026-05-09T12:39:40.985131+00:00/task_id=task_1/attempt=1.log
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_1 manual__2026-05-09T12:39:40.985131+00:00 [queued]>
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_1 manual__2026-05-09T12:39:40.985131+00:00 [queued]>
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): task_1> on 2026-05-09 12:39:40.985131+00:00
+[2026-05-09, 12:39:41 UTC] {standard_task_runner.py:60} INFO - Started process 114974 to run task
+[2026-05-09, 12:39:41 UTC] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'exp_sequential_vs_parallel_execution', 'task_1', 'manual__2026-05-09T12:39:40.985131+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/exp_sequential_vs_parallel_execution.py', '--cfg-path', '/tmp/tmpb4gl1dm4']
+[2026-05-09, 12:39:41 UTC] {standard_task_runner.py:88} INFO - Job 34: Subtask task_1
+[2026-05-09, 12:39:42 UTC] {task_command.py:423} INFO - Running <TaskInstance: exp_sequential_vs_parallel_execution.task_1 manual__2026-05-09T12:39:40.985131+00:00 [running]> on host Deep.localdomain
+[2026-05-09, 12:39:42 UTC] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='exp_sequential_vs_parallel_execution' AIRFLOW_CTX_TASK_ID='task_1' AIRFLOW_CTX_EXECUTION_DATE='2026-05-09T12:39:40.985131+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-09T12:39:40.985131+00:00'
+[2026-05-09, 12:39:42 UTC] {logging_mixin.py:188} INFO - STARTING: task_1
+[2026-05-09, 12:39:42 UTC] {logging_mixin.py:188} INFO - START TIME: 1778330382.4956005
+[2026-05-09, 12:39:47 UTC] {logging_mixin.py:188} INFO - FINISHED: task_1
+[2026-05-09, 12:39:47 UTC] {logging_mixin.py:188} INFO - END TIME: 1778330387.498394
+[2026-05-09, 12:39:47 UTC] {logging_mixin.py:188} INFO - TOTAL TASK TIME: 5.002793550491333
+[2026-05-09, 12:39:47 UTC] {python.py:201} INFO - Done. Returned value was: None
+[2026-05-09, 12:39:47 UTC] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=exp_sequential_vs_parallel_execution, task_id=task_1, execution_date=20260509T123940, start_date=20260509T123941, end_date=20260509T123947
+[2026-05-09, 12:39:47 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-05-09, 12:39:47 UTC] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
+
+Deep.localdomain
+*** Found local files:
+***   * /home/dell/Airflow-Execution-Retries/airflow_home/logs/dag_id=exp_sequential_vs_parallel_execution/run_id=manual__2026-05-09T12:39:40.985131+00:00/task_id=task_2/attempt=1.log
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_2 manual__2026-05-09T12:39:40.985131+00:00 [queued]>
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_2 manual__2026-05-09T12:39:40.985131+00:00 [queued]>
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): task_2> on 2026-05-09 12:39:40.985131+00:00
+[2026-05-09, 12:39:41 UTC] {standard_task_runner.py:60} INFO - Started process 114971 to run task
+[2026-05-09, 12:39:41 UTC] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'exp_sequential_vs_parallel_execution', 'task_2', 'manual__2026-05-09T12:39:40.985131+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/exp_sequential_vs_parallel_execution.py', '--cfg-path', '/tmp/tmppfrx19h3']
+[2026-05-09, 12:39:41 UTC] {standard_task_runner.py:88} INFO - Job 33: Subtask task_2
+[2026-05-09, 12:39:42 UTC] {task_command.py:423} INFO - Running <TaskInstance: exp_sequential_vs_parallel_execution.task_2 manual__2026-05-09T12:39:40.985131+00:00 [running]> on host Deep.localdomain
+[2026-05-09, 12:39:42 UTC] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='exp_sequential_vs_parallel_execution' AIRFLOW_CTX_TASK_ID='task_2' AIRFLOW_CTX_EXECUTION_DATE='2026-05-09T12:39:40.985131+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-09T12:39:40.985131+00:00'
+[2026-05-09, 12:39:42 UTC] {logging_mixin.py:188} INFO - STARTING: task_2
+[2026-05-09, 12:39:42 UTC] {logging_mixin.py:188} INFO - START TIME: 1778330382.4252791
+[2026-05-09, 12:39:47 UTC] {logging_mixin.py:188} INFO - FINISHED: task_2
+[2026-05-09, 12:39:47 UTC] {logging_mixin.py:188} INFO - END TIME: 1778330387.4444156
+[2026-05-09, 12:39:47 UTC] {logging_mixin.py:188} INFO - TOTAL TASK TIME: 5.019136428833008
+[2026-05-09, 12:39:47 UTC] {python.py:201} INFO - Done. Returned value was: None
+[2026-05-09, 12:39:47 UTC] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=exp_sequential_vs_parallel_execution, task_id=task_2, execution_date=20260509T123940, start_date=20260509T123941, end_date=20260509T123947
+[2026-05-09, 12:39:47 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-05-09, 12:39:47 UTC] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
+
+Deep.localdomain
+*** Found local files:
+***   * /home/dell/Airflow-Execution-Retries/airflow_home/logs/dag_id=exp_sequential_vs_parallel_execution/run_id=manual__2026-05-09T12:39:40.985131+00:00/task_id=task_3/attempt=1.log
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_3 manual__2026-05-09T12:39:40.985131+00:00 [queued]>
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exp_sequential_vs_parallel_execution.task_3 manual__2026-05-09T12:39:40.985131+00:00 [queued]>
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-05-09, 12:39:41 UTC] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): task_3> on 2026-05-09 12:39:40.985131+00:00
+[2026-05-09, 12:39:41 UTC] {standard_task_runner.py:60} INFO - Started process 114973 to run task
+[2026-05-09, 12:39:41 UTC] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'exp_sequential_vs_parallel_execution', 'task_3', 'manual__2026-05-09T12:39:40.985131+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/exp_sequential_vs_parallel_execution.py', '--cfg-path', '/tmp/tmpn9m50cw_']
+[2026-05-09, 12:39:41 UTC] {standard_task_runner.py:88} INFO - Job 35: Subtask task_3
+[2026-05-09, 12:39:42 UTC] {task_command.py:423} INFO - Running <TaskInstance: exp_sequential_vs_parallel_execution.task_3 manual__2026-05-09T12:39:40.985131+00:00 [running]> on host Deep.localdomain
+[2026-05-09, 12:39:42 UTC] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='exp_sequential_vs_parallel_execution' AIRFLOW_CTX_TASK_ID='task_3' AIRFLOW_CTX_EXECUTION_DATE='2026-05-09T12:39:40.985131+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-09T12:39:40.985131+00:00'
+[2026-05-09, 12:39:42 UTC] {logging_mixin.py:188} INFO - STARTING: task_3
+[2026-05-09, 12:39:42 UTC] {logging_mixin.py:188} INFO - START TIME: 1778330382.4846175
+[2026-05-09, 12:39:47 UTC] {logging_mixin.py:188} INFO - FINISHED: task_3
+[2026-05-09, 12:39:47 UTC] {logging_mixin.py:188} INFO - END TIME: 1778330387.4907877
+[2026-05-09, 12:39:47 UTC] {logging_mixin.py:188} INFO - TOTAL TASK TIME: 5.006170272827148
+[2026-05-09, 12:39:47 UTC] {python.py:201} INFO - Done. Returned value was: None
+[2026-05-09, 12:39:47 UTC] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=exp_sequential_vs_parallel_execution, task_id=task_3, execution_date=20260509T123940, start_date=20260509T123941, end_date=20260509T123947
+[2026-05-09, 12:39:47 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-05-09, 12:39:47 UTC] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

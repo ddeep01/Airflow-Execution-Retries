@@ -1,0 +1,75 @@
+Experiment: Sequential vs Parallel Execution in Apache Airflow
+
+We compared the behavior of two Airflow executors:
+
+1. SequentialExecutor
+2. LocalExecutor
+
+using the same DAG:
+exp_sequential_vs_parallel_execution
+
+Implementation:
+
+Each task performs:
+
+* start time logging
+* 5-second execution delay
+* end time logging
+
+Three independent tasks were created:
+
+* task_1
+* task_2
+* task_3
+
+Phase 1 — Sequential Execution
+
+Airflow Configuration:
+executor = SequentialExecutor
+
+Observation:
+Tasks executed one-by-one in sequence.
+
+Execution Order:
+task_1 → task_2 → task_3
+
+Observed Timing:
+task_1 completed around 12:38:37
+task_2 started around 12:38:43
+task_3 started around 12:38:52
+
+Total workflow execution time:
+~28 seconds
+
+Reason:
+SequentialExecutor allows only one task to run at a time.
+
+---
+
+Phase 2 — Parallel Execution
+
+Airflow Configuration:
+executor = LocalExecutor
+
+Observation:
+All tasks started almost simultaneously.
+
+Observed Timing:
+All tasks started around 12:39:41–12:39:42
+All tasks completed around 12:39:50
+
+Total workflow execution time:
+~9 seconds
+
+Reason:
+LocalExecutor enables parallel task execution using multiple worker processes.
+
+---
+
+Conclusion:
+
+SequentialExecutor executes tasks serially, resulting in higher total execution time.
+
+LocalExecutor executes tasks concurrently, significantly reducing workflow completion time.
+
+This experiment demonstrates how executor selection directly impacts task scheduling behavior and workflow performance in Apache Airflow.
