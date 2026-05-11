@@ -58,32 +58,42 @@ The project investigates:
 ```
 Airflow-Execution-Retries/
 │
-├── airflow_home/                   # Airflow runtime directory
-│   ├── dags/                       # DAG files for all experiments
-│   │   ├── exp1_default.py
-│   │   ├── exp_failure_aware_retry.py
-│   │   └── exp_priority_retry.py
-│   └── airflow.cfg                 # Airflow configuration file
+├── airflow_home/                       # Airflow runtime environment
+│   ├── dags/                           # DAG files used by Airflow
+│   ├── logs/                           # Airflow execution logs
+│   ├── airflow.cfg                     # Airflow configuration file
+│   ├── airflow.db                      # SQLite metadata database
+│   ├── airflow-webserver.pid           # Webserver process ID
+│   ├── standalone_admin_password.txt   # Auto-generated admin password
+│   └── webserver_config.py             # Webserver configuration
 │
-├── airflow_src/                    # Airflow source code (modified for experiments)
+├── airflow_src/                        # Modified Airflow source code
 │   └── models/
-│       └── taskinstance.py         # Core file modified across experiments
+│       └── taskinstance.py             # Modified retry logic implementation
 │
-├── analysis/
+├── analysis/                           # Documentation and analysis reports
 │   ├── concept_mapping.md
 │   ├── design_decision.md
 │   ├── execution.md
 │   └── failure_analysis.md
 │
-├── experiments/
+├── experiments/                        # Experimental DAG implementations
 │   ├── exp1_default.py
 │   ├── exp_failure_aware_retry.py
-│   └── exp_priority_retry.py
+│   ├── exp_priority_retry.py
+│   └── exp_sequential_vs_parallel_execution.py
 │
-├── results/                        # Experiment outputs and logs
+├── results/                            # Experiment outputs and logs
+│   ├── experiment_logs/
+│   ├── exp1_task_behavior.txt
+│   ├── exp2_priority_based_retry.txt
+│   ├── exp3_failure_aware_retry.txt
+│   └── exp4_sequential_vs_parallel_execution.txt
 │
+├── venv/
+├── .gitignore
+├── README.md
 ├── requirements.txt
-└── .gitignore
 ```
 
 ---
@@ -114,19 +124,29 @@ Final Success / Failure
 
 ## Experiments
 
-### Experiment 1 — Exponential Backoff Retry
+## 1. Experiment 1 — Airflow Task Lifecycle and Retry Behavior
 
-**Purpose:** Demonstrate Airflow's task lifecycle and retry behavior by implementing deterministic exponential backoff.
+### Purpose
+Demonstrate Apache Airflow’s task lifecycle and understand how the retry mechanism works when a task fails during execution.
 
-**What was observed:**
-- How Airflow transitions task states: `RUNNING → FAILED → UP_FOR_RETRY → RUNNING`
-- How retry delay grows exponentially with each attempt
-- The role of `try_number` in computing retry delays
+### What Was Observed
+- Airflow task state transitions:
 
-**Retry behavior observed:**
-```
-Try 1 → FAILED  (delay = base_delay × 2^0 = base_delay)
-Try 2 → FAILED  (delay = base_delay × 2^1)
+  ```text
+  RUNNING → FAILED → UP_FOR_RETRY → RUNNING
+  ```
+
+- Automatic retry handling by Airflow
+- How failed tasks are rescheduled
+- The role of `retries` and `retry_delay`
+- Changes in `try_number` during execution
+- Scheduler behavior during retries
+
+### Retry Behavior Observed
+
+```text
+Try 1 → FAILED
+Try 2 → FAILED
 Try 3 → SUCCESS (or final FAILED)
 ```
 
@@ -161,16 +181,54 @@ Try 3 → SUCCESS (or final FAILED)
 
 ### Experiment 3 — Failure-Aware Retry
 
-**Purpose:** Implement failure-aware retry logic — retry on transient errors (e.g., network timeouts) but fail fast on permanent errors (e.g., logic errors) without exhausting retries unnecessarily.
+### Purpose
+Implement intelligent retry logic where transient failures (such as network-related issues) are retried automatically, while permanent logic errors fail immediately without consuming unnecessary retry attempts.
 
-**How it works:**
-- If the exception message contains `"connection"` → raise `AirflowException` → triggers a retry
-- Otherwise → raise `AirflowFailException` → immediately marks as FAILED, no retry
+### What Was Observed
+- `AirflowException` triggers Airflow retry behavior
+- `AirflowFailException` forces immediate final failure
+- Retry logic can be dynamically controlled using exception types
+- Unnecessary retries for permanent failures were avoided
 
-**What was observed:**
-- `AirflowException` allows Airflow to retry the task (respects `retries` count)
-- `AirflowFailException` forces immediate final failure regardless of remaining retries
-- This avoids wasting retry budget on errors that will never self-resolve
+### Logic Error Behavior (No Retry)
+
+Observed logs:
+
+```text
+RETRY DECISION: Logic error → NO RETRY
+Immediate failure requested. Marking task as FAILED
+```
+
+Behavior observed:
+
+```text
+Attempt 1 → FAILED
+No retry triggered
+```
+
+### Network Error Behavior (Retry Enabled)
+
+Observed logs:
+
+```text
+RETRY DECISION: Network error → RETRY
+Marking task as UP_FOR_RETRY
+```
+
+Observed retry timings:
+
+```text
+Attempt 1 → 13:39:54
+Attempt 2 → 13:40:07 (~13 sec delay)
+Attempt 3 → 13:40:19 (~12 sec delay)
+```
+
+Behavior observed:
+
+```text
+Total attempts = 3
+(1 initial attempt + 2 retries)
+```
 
 **No source code changes** were made for this experiment. The behavior was achieved entirely through DAG-level logic.
 
@@ -500,12 +558,12 @@ Login with:
 
 In the Airflow UI, navigate to the DAGs list and trigger each experiment DAG manually:
 
-| DAG ID                    | Experiment                        |
-|---------------------------|-----------------------------------|
-| `exp1_default`            | Experiment 1 — Exponential Backoff |
-| `exp_priority_retry`      | Experiment 2 — Priority Retry     |
-| `exp_failure_smart_retry` | Experiment 3 — Failure-Aware Retry |
-| *(parallel DAG)*          | Experiment 4 — Sequential vs Parallel |
+| DAG ID                                 | Experiment                            |
+|----------------------------------------|---------------------------------------|
+| `exp1_default`                         | Experiment 1 — Exponential Backoff    |
+| `exp_priority_retry`                   | Experiment 2 — Priority Retry         |
+| `exp_failure_smart_retry`              | Experiment 3 — Failure-Aware Retry    |
+| `exp_sequential_vs_parallel_execution` | Experiment 4 — Sequential vs Parallel |
 
 You can also trigger via CLI:
 
