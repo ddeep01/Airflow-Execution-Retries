@@ -11,45 +11,72 @@ A systems-level analysis project on Apache Airflow focused on workflow orchestra
 - [Project Structure](#project-structure)
 - [System Architecture](#system-architecture)
 - [Experiments](#experiments)
-  - [Experiment 1 — Exponential Backoff Retry](#experiment-1--exponential-backoff-retry)
+  - [Experiment 1 — Airflow Task Lifecycle and Retry Behavior](#experiment-1--airflow-task-lifecycle-and-retry-behavior)
   - [Experiment 2 — Priority-Based Retry](#experiment-2--priority-based-retry)
   - [Experiment 3 — Failure-Aware Retry](#experiment-3--failure-aware-retry)
   - [Experiment 4 — Sequential vs Parallel Execution](#experiment-4--sequential-vs-parallel-execution)
-- [Source Code Changes](#source-code-changes)
 - [Configuration Changes](#configuration-changes)
 - [How to Run the Project](#how-to-run-the-project)
 - [Technologies Used](#technologies-used)
 - [Key Concepts Covered](#key-concepts-covered)
 - [Learning Outcomes](#learning-outcomes)
+- [Contributors](#-contributors)
 
 ---
 
 ## Project Overview
 
-This project studies how Apache Airflow internally handles:
+Apache Airflow is an open-source workflow orchestration platform designed to programmatically author, schedule, and monitor complex data pipelines. It was created to solve a fundamental problem in distributed data engineering: the need to reliably coordinate sequences of dependent tasks across heterogeneous systems, at scale, with full observability and fault tolerance.
 
-- DAG parsing and scheduling
-- Workflow orchestration
-- Task execution lifecycle
-- Retry-based fault tolerance
-- Failure recovery
-- Execution tracing and observability
+In traditional data engineering, pipelines are often implemented as cron jobs, shell scripts, or ad-hoc scheduling mechanisms. These approaches break down quickly under real-world conditions — they lack dependency management, offer no retry logic, provide minimal visibility into failures, and cannot scale across distributed infrastructure. Airflow was built to replace this fragility with a principled, systems-level approach to workflow management.
 
-The project was developed as part of a Big Data Engineering systems analysis assignment focused on reverse engineering a real-world distributed workflow orchestration system.
+Internally, Airflow is composed of several tightly coordinated components:
+
+- **DAG Parser** — Continuously scans the DAG directory, parses Python files, and registers workflow definitions into the metadata store.
+- **Scheduler** — The central coordination engine. It evaluates DAG schedules and task dependencies, transitions tasks through their lifecycle states, and dispatches ready tasks to an Executor.
+- **Executor** — The component responsible for physically running tasks. The choice of Executor determines whether tasks run sequentially in a single thread, in parallel subprocesses on a single machine, or distributed across a cluster of workers.
+- **Workers** — Processes (or remote agents, depending on the Executor) that receive dispatched tasks and carry out their execution logic.
+- **Metadata Database** — A relational database (SQLite for development, PostgreSQL or MySQL for production) that stores DAG definitions, task states, execution history, retry counts, and scheduling metadata. It is the source of truth for the entire system.
+- **Webserver** — A Flask-based UI that provides real-time visibility into DAG runs, task statuses, logs, and execution timelines.
+
+This project studies two of the most critical and operationally significant subsystems within Airflow: **Executors** and **Retry Mechanisms**. These two components sit at the intersection of performance and reliability — they determine how fast work gets done and how gracefully the system recovers when things go wrong.
+
+---
+
+### Executors: The Execution Layer
+
+The Executor is Airflow's task dispatch and execution engine. It is one of the most architecturally consequential configuration decisions in any Airflow deployment, directly determining throughput, parallelism, and scalability.
+
+- **SequentialExecutor** runs one task at a time in a single thread within the Scheduler process. It is deterministic and easy to debug, but fundamentally incapable of concurrent task execution. It is incompatible with production workloads.
+- **LocalExecutor** spawns a separate OS-level subprocess for each task, enabling true parallelism on a single machine. It requires a concurrent-safe metadata database backend (PostgreSQL or MySQL) since multiple processes write task state simultaneously. This makes SQLite — a single-writer, file-locked database — architecturally incompatible with LocalExecutor.
+- **CeleryExecutor** and **KubernetesExecutor** extend this model to distributed worker pools and container-native environments, respectively, enabling horizontal scalability across clusters.
+
+---
+
+### Retry Mechanisms: Fault Tolerance in Distributed Workflows
+
+In distributed systems, failures are not exceptional events — they are expected. Network timeouts, transient API errors, resource contention, and infrastructure instability are routine operational realities. A workflow orchestration system that treats every failure as terminal is not production-grade.
+
+Airflow addresses this through a configurable retry subsystem built into the `TaskInstance` model. When a task fails, the Scheduler evaluates retry eligibility based on the task's `retries` count and `retry_delay` configuration, transitions the task to `UP_FOR_RETRY`, and reschedules execution after the specified delay. This cycle repeats until the task succeeds or exhausts its retry budget, at which point it transitions to a terminal `FAILED` state.
 
 ---
 
 ## Project Objective
 
-The goal is not simply to *use* Airflow, but to analyze its **internal system behavior** from a systems engineering perspective.
+The goal of this project is not simply to *use* Apache Airflow, but to conduct a **systems-level reverse-engineering analysis** of its internal execution and fault-tolerance architecture — with a focused emphasis on Executors and Retry Mechanisms.
 
-The project investigates:
+Specifically, the project investigates:
 
-- How Airflow orchestrates workflows
-- How retries are implemented internally
-- How task failures are handled
-- What design tradeoffs exist
-- How the system behaves under failure and load conditions
+**Executor Architecture and Task Execution:**
+- How Airflow dispatches tasks through different Executor backends
+- The architectural constraints that govern Executor selection (e.g., database compatibility, process isolation, concurrency models)
+- How `SequentialExecutor` and `LocalExecutor` differ in their execution models, throughput characteristics, and infrastructure requirements
+- Why parallel task execution necessitates a concurrent-safe metadata database and why SQLite is structurally incompatible with `LocalExecutor`
+
+**Retry Mechanism Design and Fault Tolerance:**
+- How Airflow's retry subsystem is implemented within the `TaskInstance` class
+- How the `next_retry_datetime()` function governs retry timing and how it can be modified to implement custom backoff strategies
+- How `fetch_handle_failure_context()` serves as the central failure state machine and how priority-aware logic can be embedded at the point of state transition
 
 ---
 
@@ -124,12 +151,14 @@ Final Success / Failure
 
 ## Experiments
 
-## 1. Experiment 1 — Airflow Task Lifecycle and Retry Behavior
+---
 
-### Purpose
-Demonstrate Apache Airflow’s task lifecycle and understand how the retry mechanism works when a task fails during execution.
+### Experiment 1 — Airflow Task Lifecycle and Retry Behavior
 
-### What Was Observed
+#### Purpose
+Demonstrate Apache Airflow's task lifecycle and understand how the retry mechanism works when a task fails during execution.
+
+#### What Was Observed
 - Airflow task state transitions:
 
   ```text
@@ -142,7 +171,7 @@ Demonstrate Apache Airflow’s task lifecycle and understand how the retry mecha
 - Changes in `try_number` during execution
 - Scheduler behavior during retries
 
-### Retry Behavior Observed
+#### Retry Behavior Observed
 
 ```text
 Try 1 → FAILED
@@ -152,116 +181,13 @@ Try 3 → SUCCESS (or final FAILED)
 
 **DAG file:** `airflow_home/dags/exp1_default.py`
 
-**Source file modified:** `airflow_src/models/taskinstance.py`
-
 ---
 
-### Experiment 2 — Priority-Based Retry
-
-**Purpose:** Implement a custom priority-based retry mechanism where a task's `priority_weight` determines how quickly it is retried.
-
-**Priority levels and their behavior:**
-
-| Priority Weight | Level  | Retry Delay Multiplier | Effect          |
-|-----------------|--------|------------------------|-----------------|
-| ≥ 10            | HIGH   | 0.5×                   | Faster retry    |
-| 5 – 9           | MEDIUM | 1×                     | Normal retry    |
-| < 5             | LOW    | 2×                     | Slower retry    |
-
-**What was observed:**
-- High-priority tasks recover much faster after failure
-- Low-priority tasks wait longer between retries, freeing resources for critical tasks
-- `priority_weight` is a native Airflow field, requiring no schema changes
-
-**DAG file:** `airflow_home/dags/exp_priority_retry.py`
+#### Implementation Changes
 
 **Source file modified:** `airflow_src/models/taskinstance.py`
 
----
-
-### Experiment 3 — Failure-Aware Retry
-
-### Purpose
-Implement intelligent retry logic where transient failures (such as network-related issues) are retried automatically, while permanent logic errors fail immediately without consuming unnecessary retry attempts.
-
-### What Was Observed
-- `AirflowException` triggers Airflow retry behavior
-- `AirflowFailException` forces immediate final failure
-- Retry logic can be dynamically controlled using exception types
-- Unnecessary retries for permanent failures were avoided
-
-### Logic Error Behavior (No Retry)
-
-Observed logs:
-
-```text
-RETRY DECISION: Logic error → NO RETRY
-Immediate failure requested. Marking task as FAILED
-```
-
-Behavior observed:
-
-```text
-Attempt 1 → FAILED
-No retry triggered
-```
-
-### Network Error Behavior (Retry Enabled)
-
-Observed logs:
-
-```text
-RETRY DECISION: Network error → RETRY
-Marking task as UP_FOR_RETRY
-```
-
-Observed retry timings:
-
-```text
-Attempt 1 → 13:39:54
-Attempt 2 → 13:40:07 (~13 sec delay)
-Attempt 3 → 13:40:19 (~12 sec delay)
-```
-
-Behavior observed:
-
-```text
-Total attempts = 3
-(1 initial attempt + 2 retries)
-```
-
-**No source code changes** were made for this experiment. The behavior was achieved entirely through DAG-level logic.
-
-**DAG file:** `airflow_home/dags/exp_failure_aware_retry.py`
-
----
-
-### Experiment 4 — Sequential vs Parallel Execution
-
-**Purpose:** Observe and compare task execution behavior under `SequentialExecutor` vs `LocalExecutor`.
-
-**What was changed:**
-- `executor` setting in `airflow.cfg` switched from `SequentialExecutor` to `LocalExecutor`
-- Database backend switched from SQLite to PostgreSQL (required for parallel execution)
-
-**What was observed:**
-- `SequentialExecutor` runs one task at a time — simple but a bottleneck under load
-- `LocalExecutor` spawns separate processes per task — true parallelism within a single machine
-- SQLite cannot handle concurrent writes, making it incompatible with `LocalExecutor`
-
-**Config file modified:** `airflow_home/airflow.cfg`
-
----
-
-## Source Code Changes
-
-### File: `airflow_src/models/taskinstance.py`
-
-This is the core Airflow source file modified across Experiments 1 and 2. It contains the `TaskInstance` class responsible for managing task state, retry logic, and failure handling.
-
----
-
-#### Experiment 1 — Modified Function: `next_retry_datetime()`
+##### Modified Function: `next_retry_datetime()`
 
 **Class:** `TaskInstance`
 
@@ -287,19 +213,39 @@ def next_retry_datetime(self):
     return base_time + delay
 ```
 
-**Key change:** `delay_seconds * (2 ** (self.try_number - 1))` replaces a simple fixed multiplier. On attempt 1 delay is unchanged, on attempt 2 it doubles, on attempt 3 it quadruples, and so on.
+**Key change:** `delay_seconds * (2 ** (self.try_number - 1))` replaces a simple fixed multiplier. On attempt 1 the delay is unchanged, on attempt 2 it doubles, on attempt 3 it quadruples, and so on.
 
 ---
 
-#### Experiment 2 — Modified Functions: `next_retry_datetime()` and `fetch_handle_failure_context()`
+### Experiment 2 — Priority-Based Retry
 
-**Class:** `TaskInstance`
+#### Purpose
+Implement a custom priority-based retry mechanism where a task's `priority_weight` determines how quickly it is retried.
 
-**Why two functions were changed:** `next_retry_datetime()` computes the *when* of the next retry, while `fetch_handle_failure_context()` is the central failure handler that determines task state and retry eligibility. Both needed to reflect priority-based delay to ensure consistent behavior.
+#### Priority levels and their behavior
+
+| Priority Weight | Level  | Retry Delay Multiplier | Effect          |
+|-----------------|--------|------------------------|-----------------|
+| ≥ 10            | HIGH   | 0.5×                   | Faster retry    |
+| 5 – 9           | MEDIUM | 1×                     | Normal retry    |
+| < 5             | LOW    | 2×                     | Slower retry    |
+
+#### What Was Observed
+- High-priority tasks recover much faster after failure
+- Low-priority tasks wait longer between retries, freeing resources for critical tasks
+- `priority_weight` is a native Airflow field, requiring no schema changes
+
+**DAG file:** `airflow_home/dags/exp_priority_retry.py`
 
 ---
 
-**Modified `next_retry_datetime()`:**
+#### Implementation Changes
+
+**Source file modified:** `airflow_src/models/taskinstance.py`
+
+Two functions were modified for this experiment: `next_retry_datetime()` computes the *when* of the next retry, while `fetch_handle_failure_context()` is the central failure handler that determines task state and retry eligibility. Both needed to reflect priority-based delay to ensure consistent behavior.
+
+##### Modified `next_retry_datetime()`
 
 ```python
 def next_retry_datetime(self):
@@ -334,9 +280,7 @@ def next_retry_datetime(self):
     return base_time + delay
 ```
 
----
-
-**Modified `fetch_handle_failure_context()`:**
+##### Modified `fetch_handle_failure_context()`
 
 The failure handler was extended to apply the same priority-based delay at the moment of state transition (when the task moves to `UP_FOR_RETRY`), ensuring the delay baked into the task matches the one computed in `next_retry_datetime()`.
 
@@ -366,7 +310,90 @@ ti.log.info(
 ti.task.retry_delay = timedelta(seconds=delay_seconds)
 ```
 
-**Why this mattered:** Without updating `fetch_handle_failure_context()`, the task's stored `retry_delay` would remain at its original value, causing a mismatch between the logged delay and the actual scheduling time.
+**Why two functions were changed:** Without updating `fetch_handle_failure_context()`, the task's stored `retry_delay` would remain at its original value, causing a mismatch between the logged delay and the actual scheduling time.
+
+---
+
+### Experiment 3 — Failure-Aware Retry
+
+#### Purpose
+Implement intelligent retry logic where transient failures (such as network-related issues) are retried automatically, while permanent logic errors fail immediately without consuming unnecessary retry attempts.
+
+#### What Was Observed
+- `AirflowException` triggers Airflow retry behavior
+- `AirflowFailException` forces immediate final failure
+- Retry logic can be dynamically controlled using exception types
+- Unnecessary retries for permanent failures were avoided
+
+#### Logic Error Behavior (No Retry)
+
+Observed logs:
+
+```text
+RETRY DECISION: Logic error → NO RETRY
+Immediate failure requested. Marking task as FAILED
+```
+
+Behavior observed:
+
+```text
+Attempt 1 → FAILED
+No retry triggered
+```
+
+#### Network Error Behavior (Retry Enabled)
+
+Observed logs:
+
+```text
+RETRY DECISION: Network error → RETRY
+Marking task as UP_FOR_RETRY
+```
+
+Observed retry timings:
+
+```text
+Attempt 1 → 13:39:54
+Attempt 2 → 13:40:07 (~13 sec delay)
+Attempt 3 → 13:40:19 (~12 sec delay)
+```
+
+Behavior observed:
+
+```text
+Total attempts = 3
+(1 initial attempt + 2 retries)
+```
+
+**DAG file:** `airflow_home/dags/exp_failure_aware_retry.py`
+
+---
+
+#### Implementation Changes
+
+**No core source code modifications were made for this experiment.**
+
+This experiment was implemented entirely using DAG-level logic and configuration. The failure-aware behavior was achieved by raising different Airflow exception types directly within the task function:
+
+---
+
+### Experiment 4 — Sequential vs Parallel Execution
+
+#### Purpose
+Observe and compare task execution behavior under `SequentialExecutor` vs `LocalExecutor`.
+
+#### What Was Observed
+- `SequentialExecutor` runs one task at a time — simple but a bottleneck under load
+- `LocalExecutor` spawns separate processes per task — true parallelism within a single machine
+- SQLite cannot handle concurrent writes, making it incompatible with `LocalExecutor`
+
+**DAG file:** `airflow_home/dags/exp_sequential_vs_parallel_execution.py`
+
+---
+
+#### Implementation Changes
+
+No Airflow source code modifications were made for this experiment. The behavioral difference was produced entirely through configuration changes to `airflow_home/airflow.cfg`. Details of those changes are covered in the [Configuration Changes](#configuration-changes) section below.
 
 ---
 
@@ -643,4 +670,15 @@ Further analysis can be found in the following documents:
 
 ## Conclusion
 
-This project demonstrates how Apache Airflow implements reliable workflow orchestration through retries, scheduling, and state-based execution management. By modifying Airflow's core `TaskInstance` class and experimenting with different executor and database configurations, we gained hands-on understanding of how distributed workflow systems balance reliability, performance, and fault tolerance.
+This project conducted a systems-level analysis of Apache Airflow with a focused emphasis on its two most operationally critical subsystems: **Executors** and **Retry Mechanisms**. By reverse-engineering Airflow's internal architecture, modifying core source code, and observing behavioral outcomes under controlled experimental conditions, the project developed a rigorous understanding of how a production-grade workflow orchestration system achieves parallelism, fault tolerance, and reliability at scale.
+
+---
+
+## 👥 Contributors
+
+- Angel Manoj
+- Deep Patel
+
+---
+
+*© 2026 –  Airflow-Execution-Retries | The Query Crew*
